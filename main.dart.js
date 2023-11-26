@@ -1147,7 +1147,7 @@ switch(b.a){case 5:case 9:s=A.mD()
 r=A.a3("sRGB")
 if(r==null)r=t.K.a(r)
 s.c.setAttribute("color-interpolation-filters",r)
-s.uv(B.B5,m)
+s.uv(B.B0,m)
 r=A.cd(a.gn(a))
 s.kM(r,"1",l)
 s.py(l,m,1,0,0,0,6,k)
@@ -1733,7 +1733,7 @@ for(s=0;s<p;++s){r=q[s]
 if(r.c===B.Z)r.hj()}},
 afb(a,b,c){return new A.Cg(a,b,c)},
 av4(a){var s,r,q,p,o,n,m
-$label0$0:for(s=a.length,r=0;r<6;++r){q=B.AF[r]
+$label0$0:for(s=a.length,r=0;r<6;++r){q=B.AE[r]
 p=q.a
 o=p.length
 if(s<o)continue $label0$0
@@ -7506,7 +7506,7 @@ j=1}else j=3
 q.a=k+n
 s+=j
 r=s
-p=!0}else if(o<127&&(B.Bu[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.bU("")
+p=!0}else if(o<127&&(B.Bv[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.bU("")
 if(r<s){q.a+=B.d.af(a,r,s)
 r=s}p=!1}++s}else if(o<=93&&(B.km[o>>>4]&1<<(o&15))!==0)A.pS(a,s,"Invalid character")
 else{if((o&64512)===55296&&s+1<c){i=a.charCodeAt(s+1)
@@ -7536,7 +7536,7 @@ if(a==="https")return"https"
 if(a==="package")return"package"
 return a},
 ahO(a,b,c){if(a==null)return""
-return A.yw(a,b,c,B.Bf,!1,!1)},
+return A.yw(a,b,c,B.Bd,!1,!1)},
 ahL(a,b,c,d,e,f){var s,r=e==="file",q=r||f
 if(a==null)return r?"/":""
 else s=A.yw(a,b,c,B.kl,!0,!0)
@@ -14522,7 +14522,7 @@ xy:function xy(){},
 La:function La(){},
 agg(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=null,d={}
 d.a=b
-if(a==null)a=B.fS
+if(a==null)a=B.fR
 s=J.aK(a)
 r=s.gp(a)-1
 q=A.b3(0,e,!1,t.LQ)
@@ -14674,7 +14674,7 @@ q.gzs()
 p.szs(q.gzs())
 q.gts()
 p.sts(q.gts())
-r.jr(0,B.fS,p)
+r.jr(0,B.fR,p)
 r.san(0,b.gan(b))
 r.sbe(0,b.gbe(b))
 r.dy=b.ga5x()
@@ -18662,7 +18662,7 @@ _.Q=!0
 _.at=_.as=!1
 _.$ti=d},
 aoH(a,b){var s
-if(a===b)return new A.A9(B.BC)
+if(a===b)return new A.A9(B.BD)
 s=A.a([],t.fJ)
 a.pg(new A.UW(b,A.b_("debugDidFindAncestor"),A.aw(t.n),s))
 return new A.A9(s)},
@@ -21831,7 +21831,7 @@ return!1},
 i(a){return"ColorFilter.mode("+A.h(this.a)+", "+this.b.i(0)+")"}}
 A.qI.prototype={
 gVQ(){var s,r,q=new Float32Array(20)
-for(s=this.a,r=0;r<20;++r)if(B.b.u(B.AG,r))q[r]=s[r]/255
+for(s=this.a,r=0;r<20;++r)if(B.b.u(B.AF,r))q[r]=s[r]/255
 else q[r]=s[r]
 return q},
 w9(){return $.bi.aR().ColorFilter.MakeMatrix(this.gVQ())},
@@ -21970,7 +21970,7 @@ n=A.a9(new A.aZ(p,l),!0,l.h("k.E"))
 new A.aJ(n,new A.Ul(q),A.a6(n).h("aJ<1>")).S(0,m.gWR())
 new A.aJ(q,new A.Um(m),A.a6(q).h("aJ<1>")).S(0,r)}},
 M3(a){var s,r,q,p,o,n,m,l,k=A.i3().b-1
-if(k===0)return B.By
+if(k===0)return B.Bz
 s=A.a([],t.jT)
 r=t.t
 q=new A.km(A.a([],r),!1)
@@ -23127,7 +23127,7 @@ pj(){var s=this.Q
 s===$&&A.c()
 return s},
 pk(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.BA
+if(a<0||b<0)return B.BB
 s=this.a
 s===$&&A.c()
 s=s.a
@@ -27633,7 +27633,7 @@ k=t.f
 i=k.a(J.bd(k.a(B.aZ.dE(b)),"data"))
 h=A.cv(J.bd(i,"message"))
 if(h!=null&&h.length!==0){g=A.abw(i,"assertiveness")
-q.He(h,B.AV[g==null?0:g])}f.d5(c,B.aZ.bc(!0))
+q.He(h,B.AT[g==null?0:g])}f.d5(c,B.aZ.bc(!0))
 return
 case"flutter/navigation":f.e.k(0,0).yD(b).bd(new A.Sy(f,c),t.P)
 f.to="/"
@@ -29090,14 +29090,14 @@ Tg(){var s=this,r=s.Q
 if(r==null){r=s.Q=new A.qa(s.r)
 r.d=new A.SF(s)}return r},
 KG(a){var s,r=this
-if(B.b.u(B.AX,a.type)){s=r.Tg()
+if(B.b.u(B.AU,a.type)){s=r.Tg()
 s.toString
 s.sxR(J.er(r.r.$0(),B.jU))
 if(r.z!==B.k5){r.z=B.k5
 r.EL()}}return r.w.a.MG(a)},
 EL(){var s,r
 for(s=this.as,r=0;r<s.length;++r)s[r].$1(this.z)},
-MF(a){if(B.b.u(B.Bs,a))return this.z===B.bf
+MF(a){if(B.b.u(B.Bt,a))return this.z===B.bf
 return!1},
 a4v(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=null
 if(!i.x){i.w.a.l()
@@ -31654,7 +31654,7 @@ n=A.yX(r.k(s,"fontWeightIndex"))
 m=n!=null?A.aja(n):"normal"
 l=A.ai0(r.k(s,"fontSize"))
 if(l==null)l=null
-q=new A.a19(new A.S7(l,m,A.cv(r.k(s,"fontFamily")),B.BQ[p],B.kk[o]))
+q=new A.a19(new A.S7(l,m,A.cv(r.k(s,"fontFamily")),B.BR[p],B.kk[o]))
 break
 case"TextInput.clearClient":q=B.xt
 break
@@ -37686,14 +37686,14 @@ gt(a){return A.K(null,null,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B
 i(a){return"GestureSettings(physicalTouchSlop: null, physicalDoubleTapSlop: null)"}}
 A.Pl.prototype={
 pi(a){var s,r,q
-if(A.jh(a,0,null).gJq())return A.Nl(B.fQ,a,B.O,!1)
+if(A.jh(a,0,null).gJq())return A.Nl(B.fP,a,B.O,!1)
 s=this.b
 if(s==null){s=self.window.document.querySelector("meta[name=assetBase]")
 r=s==null?null:s.content
 s=r==null
 if(!s)self.window.console.warn("The `assetBase` meta tag is now deprecated.\nUse engineInitializer.initializeEngine(config) instead.\nSee: https://docs.flutter.dev/development/platform-integration/web/initialization")
 q=this.b=s?"":r
-s=q}return A.Nl(B.fQ,s+"assets/"+a,B.O,!1)}}
+s=q}return A.Nl(B.fP,s+"assets/"+a,B.O,!1)}}
 A.a9s.prototype={
 $1(a){return this.LL(a)},
 $0(){return this.$1(null)},
@@ -40677,7 +40677,7 @@ n=o.e
 o=o.cx
 r=q.gVn()
 q.a.toString
-return new A.w3(p,p,p,new A.a5g(),p,p,p,p,p,n,B.DT,p,p,p,B.BD,q.gVv(),o,p,B.IY,s,p,r,p,p,B.kg,!1,!1,!1,!1,q.gV9(),!1,p,p,p,new A.lE(q,t.bT))},
+return new A.w3(p,p,p,new A.a5g(),p,p,p,p,p,n,B.DT,p,p,p,B.BE,q.gVv(),o,p,B.IY,s,p,r,p,p,B.kg,!1,!1,!1,!1,q.gV9(),!1,p,p,p,new A.lE(q,t.bT))},
 M(a){var s,r=null,q=A.BU(!1,!1,this.Rb(a),r,r,r,r,!0,r,r,new A.a5h(),r,r,r)
 this.a.toString
 s=this.d
@@ -46349,7 +46349,7 @@ r=A.a9(new A.ak(s,new A.a1q(p),r),!1,r.h("be.E"))}return r},
 em(a){var s=this.b
 return s.a.a.em(a.a6(0,s.ghy()))},
 rk(){var s,r,q=this.b,p=q.ghy()
-if(!isFinite(p.a)||!isFinite(p.b))return B.Bw
+if(!isFinite(p.a)||!isFinite(p.b))return B.Bx
 s=q.e
 if(s==null){s=q.a.a.rk()
 q.e=s}if(p.j(0,B.i))r=s
@@ -51951,7 +51951,7 @@ s.x1=c.p1
 s.x2=c.p2
 s.xr=c.p3
 s.z=c.b
-s.WX(b==null?B.fS:b)},
+s.WX(b==null?B.fR:b)},
 Lx(a,b){return this.jr(a,null,b)},
 Ma(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6=this,a7={}
 a7.a=a6.fr
@@ -52471,7 +52471,7 @@ $2(a,b){this.b.b.v(0,this.c)
 this.a.b.nP(a,b)},
 $S:45}
 A.XA.prototype={
-ih(a,b){var s,r=B.bb.dD(A.a8m(null,A.Nl(B.fQ,b,B.O,!1),null).e),q=$.fi.eF$
+ih(a,b){var s,r=B.bb.dD(A.a8m(null,A.Nl(B.fP,b,B.O,!1),null).e),q=$.fi.eF$
 q===$&&A.c()
 s=q.ut(0,"flutter/assets",A.PR(r)).bd(new A.XB(b),t.V4)
 return s},
@@ -52568,8 +52568,8 @@ break
 case 1:return A.U(q,r)}})
 return A.V($async$w1,r)},
 Ta(a,b){var s,r,q,p
-if(a===b)return B.Bz
-if(a===B.dd&&b===B.c9)return B.AU
+if(a===b)return B.BA
+if(a===B.dd&&b===B.c9)return B.AS
 s=A.a([],t.QP)
 if(a==null)s.push(b)
 else{r=B.b.i8(B.dL,a)
@@ -53657,7 +53657,7 @@ A.j1.prototype={}
 A.Ei.prototype={
 ic(a,b,c){var s,r,q,p,o,n=$.ax.K$.f.c
 if(n==null||n.e==null)return!1
-for(s=t.r,r=0;r<2;++r){q=B.Bo[r]
+for(s=t.r,r=0;r<2;++r){q=B.Bp[r]
 p=n.e
 p.toString
 o=A.aaG(p,q,s)
@@ -56906,7 +56906,7 @@ else s=!1
 else s=!1
 else s=!1
 return s},
-gt(a){return A.K(this.a,this.b,this.c,!1,A.bZ(B.BB),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gt(a){return A.K(this.a,this.b,this.c,!1,A.bZ(B.BC),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 i(a){return"IconData(U+"+B.d.md(B.f.hD(this.a,16).toUpperCase(),5,"0")+")"}}
 A.lK.prototype={
 bE(a){return!this.w.j(0,a.w)},
@@ -57602,7 +57602,7 @@ a=s?c:a.ch
 if(a==null)a=B.hg
 b.gjS()
 b.gjS()
-e=new A.tz(a2,a0,q,p,l,o,n,a1,f===!0,m,k,h,g,j,i,a,new A.B8(c),B.Bv)
+e=new A.tz(a2,a0,q,p,l,o,n,a1,f===!0,m,k,h,g,j,i,a,new A.B8(c),B.Bw)
 if(!e.j(0,d.e))d.a0(new A.a5y(d,e))},
 Ik(){this.no()},
 Im(){if(this.d==null)this.no()},
@@ -57872,7 +57872,7 @@ r.I(0,s.L2(null,k))
 k.a.toString
 q=r.a
 p=0
-for(;!1;++p){o=B.BE[p]
+for(;!1;++p){o=B.BF[p]
 n=k.c
 n.toString
 n=o.xN(n)
@@ -62805,7 +62805,7 @@ return A.apg(s,r)},
 UI(){if(this.x)return
 this.qW()},
 M9(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this,c=null,b=d.c
-if(b===-1||d.d===-1||d.b.length===0)return new A.kA(c,c,B.c_,B.fR,d.b.length!==0)
+if(b===-1||d.d===-1||d.b.length===0)return new A.kA(c,c,B.c_,B.fQ,d.b.length!==0)
 if(!d.as){b=d.Cm(d.d,b)
 d.d=b
 d.c=d.Cm(d.c,b)}s=J.ir(d.b[d.d])
@@ -62963,7 +62963,7 @@ p.qW()
 return s.ao()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gw3(),p=0;p<s.length;s.length===r||(0,A.G)(s),++p)J.amb(s[p],q)
-o.b=B.Bx
+o.b=B.By
 o.y=!1
 o.du()},
 dj(a,b){return a.lG(b)},
@@ -64383,7 +64383,7 @@ $S:0}
 A.B7.prototype={
 M(a){return A.abX(null,B.aQ,A.ac2(A.fC(A.a([B.z_,A.aby(new A.Ri(),16,B.hh,!1,!0)],t.E),B.M,B.aT,B.I),B.eW))}}
 A.Ri.prototype={
-$2(a,b){return new A.ca(B.bJ.xH(0),new A.r3(B.fP[b],null),null)},
+$2(a,b){return new A.ca(B.bJ.xH(0),new A.r3(B.fS[b],null),null)},
 $S:67}
 A.r3.prototype={
 ai(){return new A.Ic(B.k)}}
@@ -64443,7 +64443,7 @@ $S:406}
 A.D7.prototype={
 M(a){return A.abX(B.E7,B.aQ,A.ac2(A.fC(A.a([A.aby(new A.W8(),16,B.hh,!1,!0)],t.E),B.M,B.aT,B.I),B.eW))}}
 A.W8.prototype={
-$2(a,b){return new A.ca(B.bJ.xH(0),new A.tD(B.fP[b],null),null)},
+$2(a,b){return new A.ca(B.bJ.xH(0),new A.tD(B.fS[b],null),null)},
 $S:67}
 A.tD.prototype={
 ai(){return new A.D8(B.k)}}
@@ -64589,7 +64589,7 @@ $S:0}
 A.G9.prototype={
 M(a){return A.abX(null,B.aQ,A.ac2(A.fC(A.a([B.Ih,A.aby(new A.a0D(),16,B.hh,!1,!0)],t.E),B.M,B.aT,B.I),B.eW))}}
 A.a0D.prototype={
-$2(a,b){return new A.ca(B.bJ.xH(0),new A.vC(B.fP[b],null),null)},
+$2(a,b){return new A.ca(B.bJ.xH(0),new A.vC(B.fS[b],null),null)},
 $S:67}
 A.vC.prototype={
 ai(){return new A.MA(B.k)}}
@@ -67233,7 +67233,7 @@ B.O=new A.a2_()
 B.bb=new A.a23()
 B.t=new A.y(0,0,0,0)
 B.d6=new A.GO(0,0,0,0)
-B.Bv=A.a(s([]),A.a8("w<RG>"))
+B.Bw=A.a(s([]),A.a8("w<RG>"))
 B.je=new A.GN()
 B.ax={}
 B.pn=new A.bl(B.ax,[],t.li)
@@ -67593,65 +67593,32 @@ B.al=new A.b8(8,"AL")
 B.dK=new A.b8(9,"PR")
 B.Af=new A.th(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Ag=A.a(s([0,1]),t.d)
-B.BY=A.a(s(["assets/images/screenshots/tendopay/tendopay-1.webp","assets/images/screenshots/tendopay/tendopay-2.webp","assets/images/screenshots/tendopay/tendopay-3.webp","assets/images/screenshots/tendopay/tendopay-4.webp","assets/images/screenshots/tendopay/tendopay-5.webp","assets/images/screenshots/tendopay/tendopay-6.webp"]),t.s)
-B.FF=new A.d4("TendoPay",B.BY,"assets/images/logos/tendopay.jpeg","https://apps.apple.com/pl/app/tendopay/id1530959249","https://play.google.com/store/apps/details?id=ph.tendopay.app.android&hl=en_US&gl=US")
-B.AW=A.a(s(["assets/images/screenshots/tentony/tentony-1.webp","assets/images/screenshots/tentony/tentony-2.webp","assets/images/screenshots/tentony/tentony-3.webp","assets/images/screenshots/tentony/tentony-4.webp"]),t.s)
-B.FQ=new A.d4("Tentony",B.AW,"assets/images/logos/tentony.webp","https://apps.apple.com/do/app/tentony/id1630425777","https://play.google.com/store/apps/details?id=com.tentony.app&hl=en&gl=US")
-B.AS=A.a(s(["assets/images/screenshots/tezibu/tezibu-1.webp","assets/images/screenshots/tezibu/tezibu-2.webp","assets/images/screenshots/tezibu/tezibu-3.webp","assets/images/screenshots/tezibu/tezibu-4.webp","assets/images/screenshots/tezibu/tezibu-5.webp"]),t.s)
-B.FG=new A.d4("Tezibu",B.AS,"assets/images/logos/tezibu.jpg","https://apps.apple.com/az/app/tezibu-online-super-market/id1518022392","https://play.google.com/store/apps/details?id=com.frazex.a7575.tezibu.client&hl=pl&gl=US")
-B.Bq=A.a(s(["assets/images/screenshots/tezibu-courier/tezibu-courier-1.png","assets/images/screenshots/tezibu-courier/tezibu-courier-2.png","assets/images/screenshots/tezibu-courier/tezibu-courier-3.png"]),t.s)
-B.FO=new A.d4("Tezibu Courier",B.Bq,"assets/images/logos/tezibu-courier.png","https://apps.apple.com/az/app/tezibu-courier/id1517005869","")
-B.C0=A.a(s(["assets/images/screenshots/tezibu-partner/tezibup-1.webp","assets/images/screenshots/tezibu-partner/tezibup-2.webp","assets/images/screenshots/tezibu-partner/tezibup-3.webp","assets/images/screenshots/tezibu-partner/tezibup-4.webp"]),t.s)
-B.FH=new A.d4("Tezibu Partner",B.C0,"assets/images/logos/tezibu-partner.png","https://apps.apple.com/az/app/tezibu-partner/id1516765771","https://play.google.com/store/apps/details?id=com.frazex.tezibu.partner")
-B.BP=A.a(s(["assets/images/screenshots/rahat/rahat-1.png"]),t.s)
-B.FK=new A.d4("Rahat Kart",B.BP,"assets/images/logos/rahat.png","https://apps.apple.com/az/app/rahat-kart/id1478512091","https://play.google.com/store/apps/details?id=frazex.com.inloya.rahat")
-B.B0=A.a(s(["assets/images/screenshots/wibty/wibty-1.webp","assets/images/screenshots/wibty/wibty-2.webp","assets/images/screenshots/wibty/wibty-3.webp","assets/images/screenshots/wibty/wibty-4.webp","assets/images/screenshots/wibty/wibty-5.webp","assets/images/screenshots/wibty/wibty-6.webp"]),t.s)
-B.FS=new A.d4("Wibty",B.B0,"assets/images/logos/wibty.webp","https://apps.apple.com/az/app/wibty/id1568298650","https://play.google.com/store/apps/details?id=com.wibty.wibty&hl=pl&gl=US")
-B.AZ=A.a(s(["assets/images/screenshots/flostore/flostore-1.webp","assets/images/screenshots/flostore/flostore-2.webp","assets/images/screenshots/flostore/flostore-3.webp","assets/images/screenshots/flostore/flostore-4.webp","assets/images/screenshots/flostore/flostore-5.webp"]),t.s)
-B.FI=new A.d4("Flostore.az",B.AZ,"assets/images/logos/flo.webp","https://apps.apple.com/az/app/flostore-az/id1514948886","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.flo")
-B.Br=A.a(s(["assets/images/screenshots/dentistore/dentistore-1.webp","assets/images/screenshots/dentistore/dentistore-2.webp","assets/images/screenshots/dentistore/dentistore-3.webp","assets/images/screenshots/dentistore/dentistore-4.webp"]),t.s)
-B.FJ=new A.d4("Denti Store",B.Br,"assets/images/logos/dentistore.webp","https://apps.apple.com/gb/app/dentistore/id1576104680","https://play.google.com/store/apps/details?id=az.abasoft.dentistore")
-B.BI=A.a(s(["assets/images/screenshots/lilac/lilac-1.webp","assets/images/screenshots/lilac/lilac-2.webp","assets/images/screenshots/lilac/lilac-3.webp","assets/images/screenshots/lilac/lilac-4.webp","assets/images/screenshots/lilac/lilac-5.webp"]),t.s)
-B.FE=new A.d4("Lilac.az",B.BI,"assets/images/logos/lilac.png","https://apps.apple.com/az/app/lilac-az/id1535781509","https://play.google.com/store/apps/details?id=com.frazec.onlinestore.lilac")
-B.AT=A.a(s(["assets/images/screenshots/bouquet/bouquet-1.webp","assets/images/screenshots/bouquet/bouquet-2.webp","assets/images/screenshots/bouquet/bouquet-3.webp","assets/images/screenshots/bouquet/bouquet-4.webp","assets/images/screenshots/bouquet/bouquet-5.webp"]),t.s)
-B.FL=new A.d4("Bouquet&Co",B.AT,"assets/images/logos/bouquet.webp","https://apps.apple.com/pl/app/bouquet-co/id1555310792","https://play.google.com/store/apps/details?id=com.frazex.inloya.bouquet")
-B.BN=A.a(s(["assets/images/screenshots/ra9/ra9-1.webp","assets/images/screenshots/ra9/ra9-2.webp","assets/images/screenshots/ra9/ra9-3.webp","assets/images/screenshots/ra9/ra9-4.webp"]),t.s)
-B.FT=new A.d4("RA9 Group",B.BN,"assets/images/logos/ra9.webp","https://apps.apple.com/pl/app/ra9-group/id1571044002","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.cinemaplaza")
-B.AC=A.a(s(["assets/images/screenshots/unityfood/unityfood-1.webp","assets/images/screenshots/unityfood/unityfood-2.webp","assets/images/screenshots/unityfood/unityfood-3.webp","assets/images/screenshots/unityfood/unityfood-4.webp"]),t.s)
-B.FP=new A.d4("Unity Food",B.AC,"assets/images/logos/unityfood.webp","https://apps.apple.com/pl/app/unity-food/id1539019198","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.neptunexpress")
-B.BO=A.a(s(["assets/images/screenshots/inloya/inloya-1.webp"]),t.s)
-B.FR=new A.d4("InLoya",B.BO,"assets/images/logos/inloya.jpg","https://apps.apple.com/pl/app/inloya/id1556053007","")
-B.BW=A.a(s(["assets/images/screenshots/gunka/gunka-1.png"]),t.s)
-B.FN=new A.d4("Gunka Beauty House",B.BW,"assets/images/logos/gunka.png","https://apps.apple.com/pl/app/gunka-beauty-house/id1518607512","")
-B.AR=A.a(s(["assets/images/screenshots/inloya-pos/inloya-pos-1.webp","assets/images/screenshots/inloya-pos/inloya-pos-2.webp","assets/images/screenshots/inloya-pos/inloya-pos-3.webp","assets/images/screenshots/inloya-pos/inloya-pos-4.webp"]),t.s)
-B.FM=new A.d4("InLoya POS",B.AR,"assets/images/logos/inloya-pos.webp","https://apps.apple.com/pl/app/inloya-pos/id1381461262","https://play.google.com/store/apps/details?id=com.hexobit.inloya_pos_flutter")
-B.fP=A.a(s([B.FF,B.FQ,B.FG,B.FO,B.FH,B.FK,B.FS,B.FI,B.FJ,B.FE,B.FL,B.FT,B.FP,B.FR,B.FN,B.FM]),A.a8("w<d4>"))
-B.Bp=A.a(s([137,80,78,71,13,10,26,10]),t.Z)
-B.zP=new A.iL(B.Bp,"image/png")
-B.AD=A.a(s([71,73,70,56,55,97]),t.Z)
-B.zT=new A.iL(B.AD,"image/gif")
-B.AE=A.a(s([71,73,70,56,57,97]),t.Z)
-B.zU=new A.iL(B.AE,"image/gif")
+B.Bq=A.a(s([137,80,78,71,13,10,26,10]),t.Z)
+B.zP=new A.iL(B.Bq,"image/png")
+B.AC=A.a(s([71,73,70,56,55,97]),t.Z)
+B.zT=new A.iL(B.AC,"image/gif")
+B.AD=A.a(s([71,73,70,56,57,97]),t.Z)
+B.zU=new A.iL(B.AD,"image/gif")
 B.Ah=A.a(s([255,216,255]),t.Z)
 B.zQ=new A.iL(B.Ah,"image/jpeg")
-B.B_=A.a(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
-B.zS=new A.iL(B.B_,"image/webp")
+B.AW=A.a(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
+B.zS=new A.iL(B.AW,"image/webp")
 B.AP=A.a(s([66,77]),t.Z)
 B.zR=new A.iL(B.AP,"image/bmp")
-B.AF=A.a(s([B.zP,B.zT,B.zU,B.zQ,B.zS,B.zR]),A.a8("w<iL>"))
-B.AG=A.a(s([4,9,14,19]),t.t)
-B.fQ=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
+B.AE=A.a(s([B.zP,B.zT,B.zU,B.zQ,B.zS,B.zR]),A.a8("w<iL>"))
+B.AF=A.a(s([4,9,14,19]),t.t)
+B.fP=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
 B.xQ=new A.nm(0,"auto")
 B.xR=new A.nm(1,"full")
 B.xS=new A.nm(2,"chromium")
 B.AQ=A.a(s([B.xQ,B.xR,B.xS]),A.a8("w<nm>"))
 B.ke=A.a(s([B.fD,B.dC,B.ct,B.dF,B.dJ,B.bL,B.kd,B.fO,B.al,B.dK,B.bk,B.cq,B.cr,B.dD,B.cs,B.fE,B.b3,B.fF,B.fG,B.kb,B.ak,B.dE,B.cu,B.cv,B.fH,B.fI,B.fJ,B.fK,B.kc,B.fL,B.fM,B.dG,B.cw,B.cx,B.fN,B.dH,B.dI]),A.a8("w<b8>"))
 B.dL=A.a(s([B.c9,B.dc,B.eR,B.eS,B.dd]),t.QP)
-B.AU=A.a(s([B.c9]),t.QP)
-B.AV=A.a(s([B.eT,B.eU]),A.a8("w<qm>"))
+B.AS=A.a(s([B.c9]),t.QP)
+B.AT=A.a(s([B.eT,B.eU]),A.a8("w<qm>"))
 B.kf=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
-B.AX=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
-B.B5=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.d)
+B.AU=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
+B.B0=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.d)
 B.C6=new A.kh("en","US")
 B.kg=A.a(s([B.C6]),t.ss)
 B.dM=A.a(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
@@ -67663,7 +67630,7 @@ B.Nd=new A.jo(6,0.11)
 B.Ne=new A.jo(8,0.12)
 B.Nf=new A.jo(12,0.14)
 B.ki=A.a(s([B.Nc,B.Nh,B.Ng,B.Nd,B.Ne,B.Nf]),A.a8("w<jo>"))
-B.Bf=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
+B.Bd=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
 B.zz=new A.f6(0)
 B.zA=new A.f6(1)
 B.zB=new A.f6(2)
@@ -67690,41 +67657,74 @@ B.Bn=A.a(s([B.N6,B.N9,B.N7,B.N8]),A.a8("w<jm>"))
 B.wA=new A.na()
 B.hC=new A.Fk(1,"page")
 B.hD=new A.dW(B.C,B.hC)
-B.Bo=A.a(s([B.wA,B.hD]),A.a8("w<aA>"))
+B.Bp=A.a(s([B.wA,B.hD]),A.a8("w<aA>"))
 B.kl=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
 B.km=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
-B.Bs=A.a(s(["click","scroll"]),t.s)
-B.Bu=A.a(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
-B.Bz=A.a(s([]),t.QP)
+B.Bt=A.a(s(["click","scroll"]),t.s)
+B.Bv=A.a(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
+B.BA=A.a(s([]),t.QP)
 B.Oc=A.a(s([]),t.t_)
 B.kp=A.a(s([]),A.a8("w<awL>"))
-B.BC=A.a(s([]),t.fJ)
-B.Bw=A.a(s([]),t.ER)
+B.BD=A.a(s([]),t.fJ)
+B.Bx=A.a(s([]),t.ER)
 B.Od=A.a(s([]),t.ss)
-B.BD=A.a(s([]),t.tc)
+B.BE=A.a(s([]),t.tc)
 B.dN=A.a(s([]),t.jl)
 B.kq=A.a(s([]),t.fy)
-B.By=A.a(s([]),t.jT)
-B.BE=A.a(s([]),A.a8("w<abJ<@>>"))
-B.fR=A.a(s([]),t.AO)
-B.Bx=A.a(s([]),t.D1)
-B.fS=A.a(s([]),t.V)
+B.Bz=A.a(s([]),t.jT)
+B.BF=A.a(s([]),A.a8("w<abJ<@>>"))
+B.fQ=A.a(s([]),t.AO)
+B.By=A.a(s([]),t.D1)
+B.fR=A.a(s([]),t.V)
 B.Oe=A.a(s([]),t.N_)
 B.Of=A.a(s([]),A.a8("w<O>"))
 B.ko=A.a(s([]),t.s)
 B.a2=A.a(s([]),t.oU)
-B.BA=A.a(s([]),t.q)
+B.BB=A.a(s([]),t.q)
 B.Og=A.a(s([]),t.E)
 B.cy=A.a(s([]),t.t)
 B.kn=A.a(s([]),t.ee)
-B.BB=A.a(s([]),A.a8("w<t?>"))
+B.BC=A.a(s([]),A.a8("w<t?>"))
+B.AG=A.a(s(["assets/images/screenshots/tendopay/tendopay-1.webp","assets/images/screenshots/tendopay/tendopay-2.webp","assets/images/screenshots/tendopay/tendopay-3.webp"]),t.s)
+B.FT=new A.d4("TendoPay",B.AG,"assets/images/logos/tendopay.jpeg","https://apps.apple.com/pl/app/tendopay/id1530959249","https://play.google.com/store/apps/details?id=ph.tendopay.app.android&hl=en_US&gl=US")
+B.B2=A.a(s(["assets/images/screenshots/tentony/tentony-1.webp","assets/images/screenshots/tentony/tentony-2.webp","assets/images/screenshots/tentony/tentony-3.webp"]),t.s)
+B.FJ=new A.d4("Tentony",B.B2,"assets/images/logos/tentony.webp","https://apps.apple.com/do/app/tentony/id1630425777","https://play.google.com/store/apps/details?id=com.tentony.app&hl=en&gl=US")
+B.Bo=A.a(s(["assets/images/screenshots/tezibu/tezibu-1.webp","assets/images/screenshots/tezibu/tezibu-2.webp","assets/images/screenshots/tezibu/tezibu-3.webp"]),t.s)
+B.FM=new A.d4("Tezibu",B.Bo,"assets/images/logos/tezibu.jpg","https://apps.apple.com/az/app/tezibu-online-super-market/id1518022392","https://play.google.com/store/apps/details?id=com.frazex.a7575.tezibu.client&hl=pl&gl=US")
+B.Br=A.a(s(["assets/images/screenshots/tezibu-courier/tezibu-courier-1.png","assets/images/screenshots/tezibu-courier/tezibu-courier-2.png","assets/images/screenshots/tezibu-courier/tezibu-courier-3.png"]),t.s)
+B.FO=new A.d4("Tezibu Courier",B.Br,"assets/images/logos/tezibu-courier.png","https://apps.apple.com/az/app/tezibu-courier/id1517005869","")
+B.B3=A.a(s(["assets/images/screenshots/tezibu-partner/tezibup-1.webp","assets/images/screenshots/tezibu-partner/tezibup-2.webp","assets/images/screenshots/tezibu-partner/tezibup-3.webp"]),t.s)
+B.FG=new A.d4("Tezibu Partner",B.B3,"assets/images/logos/tezibu-partner.png","https://apps.apple.com/az/app/tezibu-partner/id1516765771","https://play.google.com/store/apps/details?id=com.frazex.tezibu.partner")
+B.BQ=A.a(s(["assets/images/screenshots/rahat/rahat-1.png"]),t.s)
+B.FH=new A.d4("Rahat Kart",B.BQ,"assets/images/logos/rahat.png","https://apps.apple.com/az/app/rahat-kart/id1478512091","https://play.google.com/store/apps/details?id=frazex.com.inloya.rahat")
+B.Be=A.a(s(["assets/images/screenshots/wibty/wibty-1.webp","assets/images/screenshots/wibty/wibty-2.webp","assets/images/screenshots/wibty/wibty-3.webp"]),t.s)
+B.FP=new A.d4("Wibty",B.Be,"assets/images/logos/wibty.webp","https://apps.apple.com/az/app/wibty/id1568298650","https://play.google.com/store/apps/details?id=com.wibty.wibty&hl=pl&gl=US")
+B.Bc=A.a(s(["assets/images/screenshots/flostore/flostore-1.webp","assets/images/screenshots/flostore/flostore-2.webp","assets/images/screenshots/flostore/flostore-3.webp"]),t.s)
+B.FI=new A.d4("Flostore.az",B.Bc,"assets/images/logos/flo.webp","https://apps.apple.com/az/app/flostore-az/id1514948886","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.flo")
+B.Bs=A.a(s(["assets/images/screenshots/dentistore/dentistore-1.webp","assets/images/screenshots/dentistore/dentistore-2.webp","assets/images/screenshots/dentistore/dentistore-3.webp"]),t.s)
+B.FK=new A.d4("Denti Store",B.Bs,"assets/images/logos/dentistore.webp","https://apps.apple.com/gb/app/dentistore/id1576104680","https://play.google.com/store/apps/details?id=az.abasoft.dentistore")
+B.AR=A.a(s(["assets/images/screenshots/lilac/lilac-1.webp","assets/images/screenshots/lilac/lilac-2.webp","assets/images/screenshots/lilac/lilac-3.webp"]),t.s)
+B.FS=new A.d4("Lilac.az",B.AR,"assets/images/logos/lilac.png","https://apps.apple.com/az/app/lilac-az/id1535781509","https://play.google.com/store/apps/details?id=com.frazec.onlinestore.lilac")
+B.BK=A.a(s(["assets/images/screenshots/bouquet/bouquet-1.webp","assets/images/screenshots/bouquet/bouquet-2.webp","assets/images/screenshots/bouquet/bouquet-3.webp"]),t.s)
+B.FE=new A.d4("Bouquet&Co",B.BK,"assets/images/logos/bouquet.webp","https://apps.apple.com/pl/app/bouquet-co/id1555310792","https://play.google.com/store/apps/details?id=com.frazex.inloya.bouquet")
+B.Bl=A.a(s(["assets/images/screenshots/ra9/ra9-1.webp","assets/images/screenshots/ra9/ra9-2.webp","assets/images/screenshots/ra9/ra9-3.webp"]),t.s)
+B.FL=new A.d4("RA9 Group",B.Bl,"assets/images/logos/ra9.webp","https://apps.apple.com/pl/app/ra9-group/id1571044002","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.cinemaplaza")
+B.BI=A.a(s(["assets/images/screenshots/unityfood/unityfood-1.webp","assets/images/screenshots/unityfood/unityfood-2.webp","assets/images/screenshots/unityfood/unityfood-3.webp"]),t.s)
+B.FF=new A.d4("Unity Food",B.BI,"assets/images/logos/unityfood.webp","https://apps.apple.com/pl/app/unity-food/id1539019198","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.neptunexpress")
+B.BP=A.a(s(["assets/images/screenshots/inloya/inloya-1.webp"]),t.s)
+B.FR=new A.d4("InLoya",B.BP,"assets/images/logos/inloya.jpg","https://apps.apple.com/pl/app/inloya/id1556053007","")
+B.BX=A.a(s(["assets/images/screenshots/gunka/gunka-1.png"]),t.s)
+B.FN=new A.d4("Gunka Beauty House",B.BX,"assets/images/logos/gunka.png","https://apps.apple.com/pl/app/gunka-beauty-house/id1518607512","")
+B.C0=A.a(s(["assets/images/screenshots/inloya-pos/inloya-pos-1.webp","assets/images/screenshots/inloya-pos/inloya-pos-2.webp","assets/images/screenshots/inloya-pos/inloya-pos-3.webp"]),t.s)
+B.FQ=new A.d4("InLoya POS",B.C0,"assets/images/logos/inloya-pos.webp","https://apps.apple.com/pl/app/inloya-pos/id1381461262","https://play.google.com/store/apps/details?id=com.hexobit.inloya_pos_flutter")
+B.fS=A.a(s([B.FT,B.FJ,B.FM,B.FO,B.FG,B.FH,B.FP,B.FI,B.FK,B.FS,B.FE,B.FL,B.FF,B.FR,B.FN,B.FQ]),A.a8("w<d4>"))
 B.ew=new A.h8(0,"left")
 B.hW=new A.h8(1,"right")
 B.c2=new A.h8(2,"center")
 B.ex=new A.h8(3,"justify")
 B.bv=new A.h8(4,"start")
 B.hX=new A.h8(5,"end")
-B.BQ=A.a(s([B.ew,B.hW,B.c2,B.ex,B.bv,B.hX]),A.a8("w<h8>"))
+B.BR=A.a(s([B.ew,B.hW,B.c2,B.ex,B.bv,B.hX]),A.a8("w<h8>"))
 B.dO=A.a(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
 B.cH=new A.eG(0,"controlModifier")
 B.cI=new A.eG(1,"shiftModifier")
@@ -68584,57 +68584,57 @@ B.AL=A.a(s([54,null,null,8589935158]),t.Z)
 B.AM=A.a(s([55,null,null,8589935159]),t.Z)
 B.AN=A.a(s([56,null,null,8589935160]),t.Z)
 B.AO=A.a(s([57,null,null,8589935161]),t.Z)
-B.B1=A.a(s([8589934852,8589934852,8589934853,null]),t.Z)
+B.AX=A.a(s([8589934852,8589934852,8589934853,null]),t.Z)
 B.Ak=A.a(s([4294967555,null,4294967555,null]),t.Z)
 B.Al=A.a(s([4294968065,null,null,8589935154]),t.Z)
 B.Am=A.a(s([4294968066,null,null,8589935156]),t.Z)
 B.An=A.a(s([4294968067,null,null,8589935158]),t.Z)
 B.Ao=A.a(s([4294968068,null,null,8589935160]),t.Z)
 B.At=A.a(s([4294968321,null,null,8589935157]),t.Z)
-B.B2=A.a(s([8589934848,8589934848,8589934849,null]),t.Z)
+B.AY=A.a(s([8589934848,8589934848,8589934849,null]),t.Z)
 B.Aj=A.a(s([4294967423,null,null,8589935150]),t.Z)
 B.Ap=A.a(s([4294968069,null,null,8589935153]),t.Z)
 B.Ai=A.a(s([4294967309,null,null,8589935117]),t.Z)
 B.Aq=A.a(s([4294968070,null,null,8589935159]),t.Z)
 B.Au=A.a(s([4294968327,null,null,8589935152]),t.Z)
-B.B3=A.a(s([8589934854,8589934854,8589934855,null]),t.Z)
+B.AZ=A.a(s([8589934854,8589934854,8589934855,null]),t.Z)
 B.Ar=A.a(s([4294968071,null,null,8589935155]),t.Z)
 B.As=A.a(s([4294968072,null,null,8589935161]),t.Z)
-B.B4=A.a(s([8589934850,8589934850,8589934851,null]),t.Z)
-B.pr=new A.co(["*",B.Av,"+",B.Aw,"-",B.Ax,".",B.Ay,"/",B.Az,"0",B.AA,"1",B.AB,"2",B.AH,"3",B.AI,"4",B.AJ,"5",B.AK,"6",B.AL,"7",B.AM,"8",B.AN,"9",B.AO,"Alt",B.B1,"AltGraph",B.Ak,"ArrowDown",B.Al,"ArrowLeft",B.Am,"ArrowRight",B.An,"ArrowUp",B.Ao,"Clear",B.At,"Control",B.B2,"Delete",B.Aj,"End",B.Ap,"Enter",B.Ai,"Home",B.Aq,"Insert",B.Au,"Meta",B.B3,"PageDown",B.Ar,"PageUp",B.As,"Shift",B.B4],A.a8("co<t,C<m?>>"))
-B.BR=A.a(s([B.ky,null,null,B.pe]),t.L)
-B.BS=A.a(s([B.p0,null,null,B.pf]),t.L)
-B.BT=A.a(s([B.p1,null,null,B.pg]),t.L)
-B.BU=A.a(s([B.p2,null,null,B.h_]),t.L)
-B.BV=A.a(s([B.p3,null,null,B.ph]),t.L)
-B.B7=A.a(s([B.p4,null,null,B.h0]),t.L)
-B.B8=A.a(s([B.p5,null,null,B.h1]),t.L)
-B.B9=A.a(s([B.p6,null,null,B.h2]),t.L)
-B.Ba=A.a(s([B.p7,null,null,B.h3]),t.L)
-B.Bb=A.a(s([B.p8,null,null,B.h4]),t.L)
-B.Bc=A.a(s([B.p9,null,null,B.h5]),t.L)
-B.Bd=A.a(s([B.pa,null,null,B.h6]),t.L)
-B.Be=A.a(s([B.pb,null,null,B.h7]),t.L)
+B.B_=A.a(s([8589934850,8589934850,8589934851,null]),t.Z)
+B.pr=new A.co(["*",B.Av,"+",B.Aw,"-",B.Ax,".",B.Ay,"/",B.Az,"0",B.AA,"1",B.AB,"2",B.AH,"3",B.AI,"4",B.AJ,"5",B.AK,"6",B.AL,"7",B.AM,"8",B.AN,"9",B.AO,"Alt",B.AX,"AltGraph",B.Ak,"ArrowDown",B.Al,"ArrowLeft",B.Am,"ArrowRight",B.An,"ArrowUp",B.Ao,"Clear",B.At,"Control",B.AY,"Delete",B.Aj,"End",B.Ap,"Enter",B.Ai,"Home",B.Aq,"Insert",B.Au,"Meta",B.AZ,"PageDown",B.Ar,"PageUp",B.As,"Shift",B.B_],A.a8("co<t,C<m?>>"))
+B.BS=A.a(s([B.ky,null,null,B.pe]),t.L)
+B.BT=A.a(s([B.p0,null,null,B.pf]),t.L)
+B.BU=A.a(s([B.p1,null,null,B.pg]),t.L)
+B.BV=A.a(s([B.p2,null,null,B.h_]),t.L)
+B.BW=A.a(s([B.p3,null,null,B.ph]),t.L)
+B.B4=A.a(s([B.p4,null,null,B.h0]),t.L)
+B.B5=A.a(s([B.p5,null,null,B.h1]),t.L)
+B.B6=A.a(s([B.p6,null,null,B.h2]),t.L)
+B.B7=A.a(s([B.p7,null,null,B.h3]),t.L)
+B.B8=A.a(s([B.p8,null,null,B.h4]),t.L)
+B.B9=A.a(s([B.p9,null,null,B.h5]),t.L)
+B.Ba=A.a(s([B.pa,null,null,B.h6]),t.L)
+B.Bb=A.a(s([B.pb,null,null,B.h7]),t.L)
 B.C2=A.a(s([B.pc,null,null,B.h8]),t.L)
 B.C3=A.a(s([B.pd,null,null,B.h9]),t.L)
-B.BJ=A.a(s([B.cF,B.cF,B.dV,null]),t.L)
+B.BL=A.a(s([B.cF,B.cF,B.dV,null]),t.L)
 B.C4=A.a(s([B.dR,null,B.dR,null]),t.L)
-B.Bg=A.a(s([B.aD,null,null,B.h2]),t.L)
-B.Bh=A.a(s([B.at,null,null,B.h4]),t.L)
-B.Bi=A.a(s([B.au,null,null,B.h6]),t.L)
-B.Bt=A.a(s([B.aE,null,null,B.h8]),t.L)
-B.BF=A.a(s([B.fX,null,null,B.h5]),t.L)
-B.BK=A.a(s([B.cE,B.cE,B.dU,null]),t.L)
-B.B6=A.a(s([B.ae,null,null,B.h_]),t.L)
-B.Bj=A.a(s([B.bl,null,null,B.h1]),t.L)
-B.BX=A.a(s([B.dQ,null,null,B.fZ]),t.L)
-B.Bk=A.a(s([B.bm,null,null,B.h7]),t.L)
-B.BG=A.a(s([B.fY,null,null,B.h0]),t.L)
-B.BL=A.a(s([B.cG,B.cG,B.dW,null]),t.L)
-B.Bl=A.a(s([B.cC,null,null,B.h3]),t.L)
-B.BH=A.a(s([B.cD,null,null,B.h9]),t.L)
-B.BM=A.a(s([B.bn,B.bn,B.bM,null]),t.L)
-B.DW=new A.co(["*",B.BR,"+",B.BS,"-",B.BT,".",B.BU,"/",B.BV,"0",B.B7,"1",B.B8,"2",B.B9,"3",B.Ba,"4",B.Bb,"5",B.Bc,"6",B.Bd,"7",B.Be,"8",B.C2,"9",B.C3,"Alt",B.BJ,"AltGraph",B.C4,"ArrowDown",B.Bg,"ArrowLeft",B.Bh,"ArrowRight",B.Bi,"ArrowUp",B.Bt,"Clear",B.BF,"Control",B.BK,"Delete",B.B6,"End",B.Bj,"Enter",B.BX,"Home",B.Bk,"Insert",B.BG,"Meta",B.BL,"PageDown",B.Bl,"PageUp",B.BH,"Shift",B.BM],A.a8("co<t,C<f?>>"))
+B.Bf=A.a(s([B.aD,null,null,B.h2]),t.L)
+B.Bg=A.a(s([B.at,null,null,B.h4]),t.L)
+B.Bh=A.a(s([B.au,null,null,B.h6]),t.L)
+B.Bu=A.a(s([B.aE,null,null,B.h8]),t.L)
+B.BG=A.a(s([B.fX,null,null,B.h5]),t.L)
+B.BM=A.a(s([B.cE,B.cE,B.dU,null]),t.L)
+B.B1=A.a(s([B.ae,null,null,B.h_]),t.L)
+B.Bi=A.a(s([B.bl,null,null,B.h1]),t.L)
+B.BY=A.a(s([B.dQ,null,null,B.fZ]),t.L)
+B.Bj=A.a(s([B.bm,null,null,B.h7]),t.L)
+B.BH=A.a(s([B.fY,null,null,B.h0]),t.L)
+B.BN=A.a(s([B.cG,B.cG,B.dW,null]),t.L)
+B.Bk=A.a(s([B.cC,null,null,B.h3]),t.L)
+B.BJ=A.a(s([B.cD,null,null,B.h9]),t.L)
+B.BO=A.a(s([B.bn,B.bn,B.bM,null]),t.L)
+B.DW=new A.co(["*",B.BS,"+",B.BT,"-",B.BU,".",B.BV,"/",B.BW,"0",B.B4,"1",B.B5,"2",B.B6,"3",B.B7,"4",B.B8,"5",B.B9,"6",B.Ba,"7",B.Bb,"8",B.C2,"9",B.C3,"Alt",B.BL,"AltGraph",B.C4,"ArrowDown",B.Bf,"ArrowLeft",B.Bg,"ArrowRight",B.Bh,"ArrowUp",B.Bu,"Clear",B.BG,"Control",B.BM,"Delete",B.B1,"End",B.Bi,"Enter",B.BY,"Home",B.Bj,"Insert",B.BH,"Meta",B.BN,"PageDown",B.Bk,"PageUp",B.BJ,"Shift",B.BO],A.a8("co<t,C<f?>>"))
 B.DX=new A.ts(null,null,null,null,null,null,null,null)
 B.yq=new A.E(4284790262)
 B.yj=new A.E(4282557941)
@@ -68829,8 +68829,8 @@ B.ei=new A.oH(1,"nextLine")
 B.cV=new A.oH(2,"forward")
 B.cW=new A.oH(3,"backward")
 B.c_=new A.vd(2,"none")
-B.Gl=new A.kA(null,null,B.c_,B.fR,!1)
-B.uG=new A.kA(null,null,B.c_,B.fR,!0)
+B.Gl=new A.kA(null,null,B.c_,B.fQ,!1)
+B.uG=new A.kA(null,null,B.c_,B.fQ,!0)
 B.a4=new A.kB(0,"next")
 B.ab=new A.kB(1,"previous")
 B.a5=new A.kB(2,"end")
@@ -69360,8 +69360,8 @@ B.N1=new A.wm(0,"inside")
 B.N2=new A.wm(1,"higher")
 B.N3=new A.wm(2,"lower")
 B.yI=new A.E(67108864)
-B.AY=A.a(s([B.yI,B.a_]),t.t_)
-B.N4=new A.hf(B.AY)
+B.AV=A.a(s([B.yI,B.a_]),t.t_)
+B.N4=new A.hf(B.AV)
 B.N5=new A.hf(null)
 B.b7=new A.wE(0,"ready")
 B.Na=new A.wE(1,"possible")

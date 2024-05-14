@@ -2010,7 +2010,7 @@ return r},
 avu(a){if(a==null)return null
 return new A.a2P($.as,a)},
 aqe(){var s,r,q,p,o,n=A.aHo(self.window.navigator)
-if(n==null||n.length===0)return B.nl
+if(n==null||n.length===0)return B.nm
 s=A.a([],t.ss)
 for(r=n.length,q=0;q<n.length;n.length===r||(0,A.G)(n),++q){p=n[q]
 o=J.aFs(p,"-")
@@ -8103,7 +8103,7 @@ s+=j
 r=s
 p=!0}else if(o<127&&(B.GD[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.bZ("")
 if(r<s){q.a+=B.d.O(a,r,s)
-r=s}p=!1}++s}else if(o<=93&&(B.nr[o>>>4]&1<<(o&15))!==0)A.vt(a,s,"Invalid character")
+r=s}p=!1}++s}else if(o<=93&&(B.ns[o>>>4]&1<<(o&15))!==0)A.vt(a,s,"Invalid character")
 else{if((o&64512)===55296&&s+1<c){i=a.charCodeAt(s+1)
 if((i&64512)===56320){o=(o&1023)<<10|i&1023|65536
 j=2}else j=1}else j=1
@@ -8122,7 +8122,7 @@ aNJ(a,b,c){var s,r,q
 if(b===c)return""
 if(!A.azd(a.charCodeAt(b)))A.vt(a,b,"Scheme not starting with alphabetic character")
 for(s=b,r=!1;s<c;++s){q=a.charCodeAt(s)
-if(!(q<128&&(B.nm[q>>>4]&1<<(q&15))!==0))A.vt(a,s,"Illegal scheme character")
+if(!(q<128&&(B.nn[q>>>4]&1<<(q&15))!==0))A.vt(a,s,"Illegal scheme character")
 if(65<=q&&q<=90)r=!0}a=B.d.O(a,b,c)
 return A.aNA(r?a.toLowerCase():a)},
 aNA(a){if(a==="http")return"http"
@@ -8134,7 +8134,7 @@ azi(a,b,c){if(a==null)return""
 return A.Fd(a,b,c,B.Gd,!1,!1)},
 azg(a,b,c,d,e,f){var s,r=e==="file",q=r||f
 if(a==null)return r?"/":""
-else s=A.Fd(a,b,c,B.nq,!0,!0)
+else s=A.Fd(a,b,c,B.nr,!0,!0)
 if(s.length===0){if(r)return"/"}else if(q&&!B.d.cc(s,"/"))s="/"+s
 return A.aNK(s,e,f)},
 aNK(a,b,c){var s=b.length===0
@@ -8183,7 +8183,7 @@ else{if(o===37){n=A.as3(a,r,!1)
 if(n==null){r+=3
 continue}if("%"===n){n="%25"
 m=1}else m=3}else if(o===92&&f){n="/"
-m=1}else if(s&&o<=93&&(B.nr[o>>>4]&1<<(o&15))!==0){A.vt(a,r,"Invalid character")
+m=1}else if(s&&o<=93&&(B.ns[o>>>4]&1<<(o&15))!==0){A.vt(a,r,"Invalid character")
 m=i
 n=m}else{if((o&64512)===55296){l=r+1
 if(l<c){k=a.charCodeAt(l)
@@ -8227,7 +8227,7 @@ return B.b.bX(s,"/")},
 azc(a){var s,r,q=a.length
 if(q>=2&&A.azd(a.charCodeAt(0)))for(s=1;s<q;++s){r=a.charCodeAt(s)
 if(r===58)return B.d.O(a,0,s)+"%3A"+B.d.cs(a,s+1)
-if(r>127||(B.nm[r>>>4]&1<<(r&15))===0)break}return a},
+if(r>127||(B.nn[r>>>4]&1<<(r&15))===0)break}return a},
 aNM(a,b){if(a.Hi("package")&&a.c==null)return A.aAl(b,0,b.length)
 return-1},
 azn(a){var s,r,q,p=a.gqO(),o=p.length
@@ -8961,7 +8961,7 @@ if(r==null)r=3
 s=b==null?null:b.a
 r=A.O(r,s==null?3:s,c)
 r.toString
-return B.np[A.nz(B.c.ab(r),0,8)]},
+return B.nq[A.nz(B.c.ab(r),0,8)]},
 avH(a,b,c){var s=a==null,r=s?null:a.a,q=b==null
 if(r==(q?null:b.a))s=s&&q
 else s=!0
@@ -12624,7 +12624,7 @@ avr(a,b,c){if(b!=null&&!b.k(0,B.D))return A.auy(A.N(B.c.ab(255*A.aHF(c)),b.gl(b)
 return a},
 aHF(a){var s,r,q,p,o,n
 if(a<0)return 0
-for(s=0;r=B.no[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.no[s-1]
+for(s=0;r=B.np[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.np[s-1]
 o=p.a
 n=p.b
 return n+(a-o)/(q-o)*(r.b-n)},
@@ -27750,7 +27750,7 @@ case 6:e=new A.bN(A.ba(a4,a5,A.ck(),!1,l))
 break
 case 7:f=B.ny[a4.cb()-1]
 break
-case 8:g=B.nn[a4.cb()-1]
+case 8:g=B.no[a4.cb()-1]
 break
 case 9:a2=a4.b6()
 break
@@ -28406,7 +28406,7 @@ case 3:h=new A.hz(A.ba(a,b,A.G2(),!1,m))
 break
 case 4:i=B.ny[a.cb()-1]
 break
-case 5:j=B.nn[a.cb()-1]
+case 5:j=B.no[a.cb()-1]
 break
 case 6:d=a.b6()
 break
@@ -45673,7 +45673,7 @@ r=B.d.js(m,"?",s)
 q=m.length
 if(r>=0){p=A.Fd(m,r+1,q,B.fK,!1,!1)
 q=r}else p=n
-m=o.c=new A.Qs(o,"data","",n,n,A.Fd(m,s,q,B.nq,!1,!1),p,n)}return m},
+m=o.c=new A.Qs(o,"data","",n,n,A.Fd(m,s,q,B.nr,!1,!1),p,n)}return m},
 agB(){var s,r,q,p,o,n,m,l,k=this.a,j=this.b,i=B.b.gL(j)+1
 if((j.length&1)===1)return B.ls.Sj(k,i)
 j=k.length
@@ -52774,7 +52774,7 @@ r=n.r
 n=n.cx
 q=p.ga9j()
 p.a.toString
-return new A.BN(o,o,o,new A.ajx(),o,o,o,o,o,o,m,o,o,r,B.GK,p.ga9s(),n,o,B.Pm,s,o,q,o,o,B.nl,!1,!1,!1,!1,p.ga8P(),!1,o,o,o,new A.oz(p,t.bT))},
+return new A.BN(o,o,o,new A.ajx(),o,o,o,o,o,o,m,o,o,r,B.GK,p.ga9s(),n,o,B.Pm,s,o,q,o,o,B.nm,!1,!1,!1,!1,p.ga8P(),!1,o,o,o,new A.oz(p,t.bT))},
 K(a){var s,r=null,q=A.xD(!1,!1,this.a2u(a),r,r,r,r,!0,r,r,r,new A.ajy(),r,r)
 this.a.toString
 s=this.d
@@ -61652,7 +61652,7 @@ p=e==null?h.gnu(0):e
 o=h.r
 o=o==null?g:o*a2+a1
 n=h.w
-n=n==null?g:B.np[B.e.ef(n.a,0,8)]
+n=n==null?g:B.nq[B.e.ef(n.a,0,8)]
 m=h.y
 m=m==null?g:m+0
 l=h.z
@@ -88846,7 +88846,7 @@ if(A.a5(a,p,o).w.a.a>=1200)o=B.ds
 else{A.bP(a)
 o=B.c_}return A.dn(p,A.bK(A.a([s,r,q,o,A.aqP(new A.afx(),15,B.jR,!1,!0)],t.p),B.y,B.F,B.p),B.r,B.fd,p,p,p,p,p,p,p,p,p)}}
 A.afx.prototype={
-$2(a,b){return new A.d5(B.my.tH(0),new A.ts(B.ns[b],null),null)},
+$2(a,b){return new A.d5(B.my.tH(0),new A.ts(B.nl[b],null),null)},
 $S:77}
 A.yo.prototype={
 ad(){return new A.S5(B.j)}}
@@ -88962,7 +88962,7 @@ n=B.c.ab(127.5)
 m=t.p
 return A.dn(l,A.bK(A.a([s,r,q,k,p,new A.d5(B.De,A.arv(A.ds(A.a([A.bk("See more",l,l,l,o.aF(A.N(n,0,20,70)),l,l),A.aqx(B.Eg,A.N(n,0,20,70),13)],m),B.y,B.ck,B.cJ),new A.akA(a),l),l)],m),B.y,B.F,B.p),B.r,B.fd,l,l,l,l,l,l,l,l,l)}}
 A.akz.prototype={
-$2(a,b){return new A.d5(B.my.Sn(30,0),new A.ts(B.ns[b],null),null)},
+$2(a,b){return new A.d5(B.my.Sn(30,0),new A.ts(B.nl[b],null),null)},
 $S:77}
 A.akA.prototype={
 $0(){return A.kO(this.a,"/projects",t.X)},
@@ -93427,6 +93427,37 @@ B.FQ=A.a(s([B.ia,B.ib]),A.af("o<w9>"))
 B.FR=A.a(s([1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,257,385,513,769,1025,1537,2049,3073,4097,6145,8193,12289,16385,24577]),t.t)
 B.nk=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
 B.FS=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
+B.Gc=A.a(s(["assets/images/mockups/tendopay-mockup.png"]),t.s)
+B.Ll=new A.ed("TendoPay","Banking","TendoPay gives you access to a full-suite of financial services right at your fingertips. This app allows you to sign up, log in, make purchases, pay bills, set your financial goals, track your expenses, and much more.",B.Gc,"assets/images/logos/tendopay.jpeg","https://apps.apple.com/ph/app/tendopay/id1530959249","https://play.google.com/store/apps/details?id=ph.tendopay.app.android&hl=en_US&gl=US")
+B.Gw=A.a(s(["assets/images/mockups/tentony-mockup.png"]),t.s)
+B.Lz=new A.ed("Tentony","E-commerce","The easy way to shop from home. Enhance your shopping experience with the Tentony app. By downloading the Tentony app, you can find the answer to all your needs in one app. Brands' new season products, daily specials and discounts you won't find anywhere else are with you anytime with the Tentony mobile app!",B.Gw,"assets/images/logos/tentony.webp","https://apps.apple.com/do/app/tentony/id1630425777","https://play.google.com/store/apps/details?id=com.tentony.app&hl=en&gl=US")
+B.Ga=A.a(s(["assets/images/mockups/wibty-mockup.png"]),t.s)
+B.Ln=new A.ed("Wibty","Social Media | Music","Wibty is the first national social network of Azerbaijan. Create connections with friends, loved ones, family, and people who share your musical tastes. Share your own photos and videos as both posts and stories. Share with people how you feel. Make your profile private or ultra private.",B.Ga,"assets/images/logos/wibty.webp","https://apps.apple.com/az/app/wibty/id1568298650","https://play.google.com/store/apps/details?id=com.wibty.wibty")
+B.Gt=A.a(s(["assets/images/mockups/tezibu-mockup.png"]),t.s)
+B.Lx=new A.ed("Tezibu","Delivery","By easy user interface issued for your disposal, everything, from tasty foods, city pharmacies and supermarket networks up to Children\u2019s world, 1001 Trifles \u2013 will be delivered to your door. All you need to do is to register.",B.Gt,"assets/images/logos/tezibu.jpg","https://apps.apple.com/az/app/tezibu-online-super-market/id1518022392","https://play.google.com/store/apps/details?id=com.frazex.a7575.tezibu.client")
+B.H0=A.a(s(["assets/images/mockups/rahat-mockup.png"]),t.s)
+B.Ly=new A.ed("Rahat Kart","E-commerce | Delivery","The easiest way to get closer to your favorite place. Enjoy yourself!",B.H0,"assets/images/logos/rahat.png","https://apps.apple.com/az/app/rahat-kart/id1478512091","https://play.google.com/store/apps/details?id=frazex.com.inloya.rahat")
+B.Hd=A.a(s(["assets/images/mockups/tezibu-courier-mockup.png"]),t.s)
+B.Lt=new A.ed("Tezibu Courier","Delivery","The Tezibu Courier application was created in integration with the Tezibu application for the convenience of couriers in order to carry out proactive delivery processes. This application contains information about customer contacts, time, cost, destinations and other data related to delivery details.",B.Hd,"assets/images/logos/tezibu-courier.png","https://apps.apple.com/az/app/tezibu-courier/id1517005869","")
+B.H_=A.a(s(["assets/images/mockups/tezibu-partner-mockup.png"]),t.s)
+B.Lq=new A.ed("Tezibu Partner","Delivery","Do you want to develop your own business and involve new customers? Then, join the row of partners of Tezibu! We present you mobile partner with confident user interface and our web-site.",B.H_,"assets/images/logos/tezibu-partner.png","https://apps.apple.com/az/app/tezibu-partner/id1516765771","https://play.google.com/store/apps/details?id=com.frazex.tezibu.partner")
+B.F9=A.a(s(["assets/images/mockups/flo-mockup.png"]),t.s)
+B.Lr=new A.ed("Flostore.az","E-commerce","Basics in a small workshop in 1960 by Ahmet Ziylan thrown FLO Retailing, today is the undisputed leader of Turkey's shoe market. FLO Ma\u011fazac\u0131l\u0131k, which employs more than 9,700 and indirectly close to 30,000 people, sells 55 million pairs of shoes annually.",B.F9,"assets/images/logos/flo.webp","https://apps.apple.com/az/app/flostore-az/id1514948886","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.flo")
+B.Gb=A.a(s(["assets/images/mockups/lilac-mockup.png"]),t.s)
+B.Lu=new A.ed("Lilac.az","E-commerce",'All flowers for bouquets, flower arrangements and interior decoration are carefully selected, collected and sent to Azerbaijan by Dutch specialists. Thanks to this, "Lilac" is known and loved in Baku for its unique taste. After all, every bouquet is a small work of art.',B.Gb,"assets/images/logos/lilac.png","https://apps.apple.com/az/app/lilac-az/id1535781509","https://play.google.com/store/apps/details?id=com.frazec.onlinestore.lilac")
+B.FM=A.a(s(["assets/images/mockups/bouquet-mockup.png"]),t.s)
+B.Lv=new A.ed("Bouquet&Co","E-commerce","In the BOUQUET flower shop, you can find exquisite bouquets for every taste, as well as designer gifts made by our artisans.",B.FM,"assets/images/logos/bouquet.webp","https://apps.apple.com/az/app/bouquet-co/id1555310792","https://play.google.com/store/apps/details?id=com.frazex.inloya.bouquet")
+B.Fa=A.a(s(["assets/images/mockups/ra9-mockup.png"]),t.s)
+B.Lm=new A.ed("RA9 Group","E-commerce","The first Karaoke&Cinema Hotel chain in Azerbaijan.",B.Fa,"assets/images/logos/ra9.webp","https://apps.apple.com/az/app/ra9-group/id1571044002","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.cinemaplaza")
+B.Gu=A.a(s(["assets/images/mockups/unityfood-mockup.png"]),t.s)
+B.Lo=new A.ed("Unity Food","E-commerce","Unity Food specializes in the wholesale of seafood, groceries, meat and meat products, as well as related products.",B.Gu,"assets/images/logos/unityfood.webp","https://apps.apple.com/az/app/unity-food/id1539019198","")
+B.H9=A.a(s(["assets/images/mockups/denti-store-mockup.png"]),t.s)
+B.Ls=new A.ed("Denti Store","E-commerce","Dentists and surgeons, orthodontists, dental technicians can order all dental products, instruments, disposables, disinfectants and other laboratory equipment from a single mobile application.",B.H9,"assets/images/logos/dentistore.webp","https://apps.apple.com/gb/app/dentistore/id1576104680","")
+B.Gz=A.a(s(["assets/images/mockups/gunka-mockup.png"]),t.s)
+B.Lp=new A.ed("Gunka Beauty House","Customer Loyalty",'\u201cGunka Beauty House" beauty salon - "Looking beautiful is not expensive"',B.Gz,"assets/images/logos/gunka.png","https://apps.apple.com/az/app/gunka-beauty-house/id1518607512","")
+B.GR=A.a(s(["assets/images/mockups/inloya-pos-mockup.png"]),t.s)
+B.Lw=new A.ed("InLoya POS","Customer Loyalty","InLoya POS is a free mobile application for scanning InLoya QR-codes and identify the clients and promotions, add points, provide with discount and etc.",B.GR,"assets/images/logos/inloya-pos.webp","https://apps.apple.com/az/app/inloya-pos/id1381461262","https://play.google.com/store/apps/details?id=com.hexobit.inloya_pos_flutter")
+B.nl=A.a(s([B.Ll,B.Lz,B.Ln,B.Lx,B.Ly,B.Lt,B.Lq,B.Lr,B.Lu,B.Lv,B.Lm,B.Lo,B.Ls,B.Lp,B.Lw]),A.af("o<ed>"))
 B.FZ=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.n)
 B.jO=new A.kL(0,"none")
 B.Jg=new A.kL(1,"add")
@@ -93439,25 +93470,25 @@ B.EO=new A.rN(0,"leftAlign")
 B.EP=new A.rN(1,"rightAlign")
 B.G9=A.a(s([B.EO,B.EP,B.j3]),A.af("o<rN>"))
 B.Hn=new A.mp("en","US")
-B.nl=A.a(s([B.Hn]),t.ss)
+B.nm=A.a(s([B.Hn]),t.ss)
 B.fH=A.a(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
 B.v=A.a(s([2774754246,2222750968,2574743534,2373680118,234025727,3177933782,2976870366,1422247313,1345335392,50397442,2842126286,2099981142,436141799,1658312629,3870010189,2591454956,1170918031,2642575903,1086966153,2273148410,368769775,3948501426,3376891790,200339707,3970805057,1742001331,4255294047,3937382213,3214711843,4154762323,2524082916,1539358875,3266819957,486407649,2928907069,1780885068,1513502316,1094664062,49805301,1338821763,1546925160,4104496465,887481809,150073849,2473685474,1943591083,1395732834,1058346282,201589768,1388824469,1696801606,1589887901,672667696,2711000631,251987210,3046808111,151455502,907153956,2608889883,1038279391,652995533,1764173646,3451040383,2675275242,453576978,2659418909,1949051992,773462580,756751158,2993581788,3998898868,4221608027,4132590244,1295727478,1641469623,3467883389,2066295122,1055122397,1898917726,2542044179,4115878822,1758581177,0,753790401,1612718144,536673507,3367088505,3982187446,3194645204,1187761037,3653156455,1262041458,3729410708,3561770136,3898103984,1255133061,1808847035,720367557,3853167183,385612781,3309519750,3612167578,1429418854,2491778321,3477423498,284817897,100794884,2172616702,4031795360,1144798328,3131023141,3819481163,4082192802,4272137053,3225436288,2324664069,2912064063,3164445985,1211644016,83228145,3753688163,3249976951,1977277103,1663115586,806359072,452984805,250868733,1842533055,1288555905,336333848,890442534,804056259,3781124030,2727843637,3427026056,957814574,1472513171,4071073621,2189328124,1195195770,2892260552,3881655738,723065138,2507371494,2690670784,2558624025,3511635870,2145180835,1713513028,2116692564,2878378043,2206763019,3393603212,703524551,3552098411,1007948840,2044649127,3797835452,487262998,1994120109,1004593371,1446130276,1312438900,503974420,3679013266,168166924,1814307912,3831258296,1573044895,1859376061,4021070915,2791465668,2828112185,2761266481,937747667,2339994098,854058965,1137232011,1496790894,3077402074,2358086913,1691735473,3528347292,3769215305,3027004632,4199962284,133494003,636152527,2942657994,2390391540,3920539207,403179536,3585784431,2289596656,1864705354,1915629148,605822008,4054230615,3350508659,1371981463,602466507,2094914977,2624877800,555687742,3712699286,3703422305,2257292045,2240449039,2423288032,1111375484,3300242801,2858837708,3628615824,84083462,32962295,302911004,2741068226,1597322602,4183250862,3501832553,2441512471,1489093017,656219450,3114180135,954327513,335083755,3013122091,856756514,3144247762,1893325225,2307821063,2811532339,3063651117,572399164,2458355477,552200649,1238290055,4283782570,2015897680,2061492133,2408352771,4171342169,2156497161,386731290,3669999461,837215959,3326231172,3093850320,3275833730,2962856233,1999449434,286199582,3417354363,4233385128,3602627437,974525996]),t.t)
-B.nm=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
-B.nn=A.a(s([B.nf,B.ng,B.nh]),A.af("o<rW>"))
+B.nn=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
+B.no=A.a(s([B.nf,B.ng,B.nh]),A.af("o<rW>"))
 B.Uh=new A.lq(0,0)
 B.Um=new A.lq(1,0.05)
 B.Ul=new A.lq(3,0.08)
 B.Ui=new A.lq(6,0.11)
 B.Uj=new A.lq(8,0.12)
 B.Uk=new A.lq(12,0.14)
-B.no=A.a(s([B.Uh,B.Um,B.Ul,B.Ui,B.Uj,B.Uk]),A.af("o<lq>"))
+B.np=A.a(s([B.Uh,B.Um,B.Ul,B.Ui,B.Uj,B.Uk]),A.af("o<lq>"))
 B.Gd=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
 B.Ge=A.a(s([0,10,20,30,40,50,60,70,80,90,95,99,100]),t.t)
 B.DY=new A.hF(0)
 B.DZ=new A.hF(1)
 B.E_=new A.hF(2)
 B.mV=new A.hF(8)
-B.np=A.a(s([B.DY,B.DZ,B.E_,B.B,B.ab,B.fr,B.ce,B.bq,B.mV]),A.af("o<hF>"))
+B.nq=A.a(s([B.DY,B.DZ,B.E_,B.B,B.ab,B.fr,B.ce,B.bq,B.mV]),A.af("o<hF>"))
 B.Gf=A.a(s([16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15]),t.t)
 B.Gh=A.a(s([0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13]),t.t)
 B.Gg=A.a(s([5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]),t.t)
@@ -93480,41 +93511,10 @@ B.eA=new A.MX(1,"page")
 B.hr=new A.dZ(B.R,B.eA)
 B.Gr=A.a(s([B.Ag,B.hr]),A.af("o<aW>"))
 B.Gs=A.a(s([3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258]),t.t)
-B.nq=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
-B.nr=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
+B.nr=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
+B.ns=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
 B.cF=A.a(s([82,9,106,213,48,54,165,56,191,64,163,158,129,243,215,251,124,227,57,130,155,47,255,135,52,142,67,68,196,222,233,203,84,123,148,50,166,194,35,61,238,76,149,11,66,250,195,78,8,46,161,102,40,217,36,178,118,91,162,73,109,139,209,37,114,248,246,100,134,104,152,22,212,164,92,204,93,101,182,146,108,112,72,80,253,237,185,218,94,21,70,87,167,141,157,132,144,216,171,0,140,188,211,10,247,228,88,5,184,179,69,6,208,44,30,143,202,63,15,2,193,175,189,3,1,19,138,107,58,145,17,65,79,103,220,234,151,242,207,206,240,180,230,115,150,172,116,34,231,173,53,133,226,249,55,232,28,117,223,110,71,241,26,113,29,41,197,137,111,183,98,14,170,24,190,27,252,86,62,75,198,210,121,32,154,219,192,254,120,205,90,244,31,221,168,51,136,7,199,49,177,18,16,89,39,128,236,95,96,81,127,169,25,181,74,13,45,229,122,159,147,201,156,239,160,224,59,77,174,42,245,176,200,235,187,60,131,83,153,97,23,43,4,126,186,119,214,38,225,105,20,99,85,33,12,125]),t.t)
 B.ed=A.a(s([0,79764919,159529838,222504665,319059676,398814059,445009330,507990021,638119352,583659535,797628118,726387553,890018660,835552979,1015980042,944750013,1276238704,1221641927,1167319070,1095957929,1595256236,1540665371,1452775106,1381403509,1780037320,1859660671,1671105958,1733955601,2031960084,2111593891,1889500026,1952343757,2552477408,2632100695,2443283854,2506133561,2334638140,2414271883,2191915858,2254759653,3190512472,3135915759,3081330742,3009969537,2905550212,2850959411,2762807018,2691435357,3560074640,3505614887,3719321342,3648080713,3342211916,3287746299,3467911202,3396681109,4063920168,4143685023,4223187782,4286162673,3779000052,3858754371,3904687514,3967668269,881225847,809987520,1023691545,969234094,662832811,591600412,771767749,717299826,311336399,374308984,453813921,533576470,25881363,88864420,134795389,214552010,2023205639,2086057648,1897238633,1976864222,1804852699,1867694188,1645340341,1724971778,1587496639,1516133128,1461550545,1406951526,1302016099,1230646740,1142491917,1087903418,2896545431,2825181984,2770861561,2716262478,3215044683,3143675388,3055782693,3001194130,2326604591,2389456536,2200899649,2280525302,2578013683,2640855108,2418763421,2498394922,3769900519,3832873040,3912640137,3992402750,4088425275,4151408268,4197601365,4277358050,3334271071,3263032808,3476998961,3422541446,3585640067,3514407732,3694837229,3640369242,1762451694,1842216281,1619975040,1682949687,2047383090,2127137669,1938468188,2001449195,1325665622,1271206113,1183200824,1111960463,1543535498,1489069629,1434599652,1363369299,622672798,568075817,748617968,677256519,907627842,853037301,1067152940,995781531,51762726,131386257,177728840,240578815,269590778,349224269,429104020,491947555,4046411278,4126034873,4172115296,4234965207,3794477266,3874110821,3953728444,4016571915,3609705398,3555108353,3735388376,3664026991,3290680682,3236090077,3449943556,3378572211,3174993278,3120533705,3032266256,2961025959,2923101090,2868635157,2813903052,2742672763,2604032198,2683796849,2461293480,2524268063,2284983834,2364738477,2175806836,2238787779,1569362073,1498123566,1409854455,1355396672,1317987909,1246755826,1192025387,1137557660,2072149281,2135122070,1912620623,1992383480,1753615357,1816598090,1627664531,1707420964,295390185,358241886,404320391,483945776,43990325,106832002,186451547,266083308,932423249,861060070,1041341759,986742920,613929101,542559546,756411363,701822548,3316196985,3244833742,3425377559,3370778784,3601682597,3530312978,3744426955,3689838204,3819031489,3881883254,3928223919,4007849240,4037393693,4100235434,4180117107,4259748804,2310601993,2373574846,2151335527,2231098320,2596047829,2659030626,2470359227,2550115596,2947551409,2876312838,2788305887,2733848168,3165939309,3094707162,3040238851,2985771188]),t.t)
-B.Gc=A.a(s(["assets/images/mockups/tendopay-mockup.png"]),t.s)
-B.Ll=new A.ed("TendoPay","Banking","TendoPay gives you access to a full-suite of financial services right at your fingertips. This app allows you to sign up, log in, make purchases, pay bills, set your financial goals, track your expenses, and much more.",B.Gc,"assets/images/logos/tendopay.jpeg","https://apps.apple.com/pl/app/tendopay/id1530959249","https://play.google.com/store/apps/details?id=ph.tendopay.app.android&hl=en_US&gl=US")
-B.Gw=A.a(s(["assets/images/mockups/tentony-mockup.png"]),t.s)
-B.Ly=new A.ed("Tentony","E-commerce","The easy way to shop from home. Enhance your shopping experience with the Tentony app. By downloading the Tentony app, you can find the answer to all your needs in one app. Brands' new season products, daily specials and discounts you won't find anywhere else are with you anytime with the Tentony mobile app!",B.Gw,"assets/images/logos/tentony.webp","https://apps.apple.com/do/app/tentony/id1630425777","https://play.google.com/store/apps/details?id=com.tentony.app&hl=en&gl=US")
-B.H0=A.a(s(["assets/images/mockups/rahat-mockup.png"]),t.s)
-B.Lx=new A.ed("Rahat Kart","E-commerce | Delivery","The easiest way to get closer to your favorite place. Enjoy yourself!",B.H0,"assets/images/logos/rahat.png","https://apps.apple.com/az/app/rahat-kart/id1478512091","https://play.google.com/store/apps/details?id=frazex.com.inloya.rahat")
-B.Gt=A.a(s(["assets/images/mockups/tezibu-mockup.png"]),t.s)
-B.Ln=new A.ed("Tezibu","Delivery","By easy user interface issued for your disposal, everything, from tasty foods, city pharmacies and supermarket networks up to Children\u2019s world, 1001 Trifles \u2013 will be delivered to your door. All you need to do is to register.",B.Gt,"assets/images/logos/tezibu.jpg","https://apps.apple.com/az/app/tezibu-online-super-market/id1518022392","https://play.google.com/store/apps/details?id=com.frazex.a7575.tezibu.client&hl=pl&gl=US")
-B.Hd=A.a(s(["assets/images/mockups/tezibu-courier-mockup.png"]),t.s)
-B.Lu=new A.ed("Tezibu Courier","Delivery","The Tezibu Courier application was created in integration with the Tezibu application for the convenience of couriers in order to carry out proactive delivery processes. This application contains information about customer contacts, time, cost, destinations and other data related to delivery details.",B.Hd,"assets/images/logos/tezibu-courier.png","https://apps.apple.com/az/app/tezibu-courier/id1517005869","")
-B.H_=A.a(s(["assets/images/mockups/tezibu-partner-mockup.png"]),t.s)
-B.Lp=new A.ed("Tezibu Partner","Delivery","Do you want to develop your own business and involve new customers? Then, join the row of partners of Tezibu! We present you mobile partner with confident user interface and our web-site.",B.H_,"assets/images/logos/tezibu-partner.png","https://apps.apple.com/az/app/tezibu-partner/id1516765771","https://play.google.com/store/apps/details?id=com.frazex.tezibu.partner")
-B.Ga=A.a(s(["assets/images/mockups/wibty-mockup.png"]),t.s)
-B.Ls=new A.ed("Wibty","Social Media | Music","Wibty is the first national social network of Azerbaijan. Create connections with friends, loved ones, family, and people who share your musical tastes. Share your own photos and videos as both posts and stories. Share with people how you feel. Make your profile private or ultra private.",B.Ga,"assets/images/logos/wibty.webp","https://apps.apple.com/az/app/wibty/id1568298650","https://play.google.com/store/apps/details?id=com.wibty.wibty&hl=pl&gl=US")
-B.F9=A.a(s(["assets/images/mockups/flo-mockup.png"]),t.s)
-B.Lr=new A.ed("Flostore.az","E-commerce","Basics in a small workshop in 1960 by Ahmet Ziylan thrown FLO Retailing, today is the undisputed leader of Turkey's shoe market. FLO Ma\u011fazac\u0131l\u0131k, which employs more than 9,700 and indirectly close to 30,000 people, sells 55 million pairs of shoes annually.",B.F9,"assets/images/logos/flo.webp","https://apps.apple.com/az/app/flostore-az/id1514948886","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.flo")
-B.H9=A.a(s(["assets/images/mockups/denti-store-mockup.png"]),t.s)
-B.Lt=new A.ed("Denti Store","E-commerce","Dentists and surgeons, orthodontists, dental technicians can order all dental products, instruments, disposables, disinfectants and other laboratory equipment from a single mobile application.",B.H9,"assets/images/logos/dentistore.webp","https://apps.apple.com/gb/app/dentistore/id1576104680","")
-B.Gb=A.a(s(["assets/images/mockups/lilac-mockup.png"]),t.s)
-B.Lv=new A.ed("Lilac.az","E-commerce",'All flowers for bouquets, flower arrangements and interior decoration are carefully selected, collected and sent to Azerbaijan by Dutch specialists. Thanks to this, "Lilac" is known and loved in Baku for its unique taste. After all, every bouquet is a small work of art.',B.Gb,"assets/images/logos/lilac.png","https://apps.apple.com/az/app/lilac-az/id1535781509","https://play.google.com/store/apps/details?id=com.frazec.onlinestore.lilac")
-B.FM=A.a(s(["assets/images/mockups/bouquet-mockup.png"]),t.s)
-B.Lo=new A.ed("Bouquet&Co","E-commerce","In the BOUQUET flower shop, you can find exquisite bouquets for every taste, as well as designer gifts made by our artisans.",B.FM,"assets/images/logos/bouquet.webp","https://apps.apple.com/pl/app/bouquet-co/id1555310792","https://play.google.com/store/apps/details?id=com.frazex.inloya.bouquet")
-B.Fa=A.a(s(["assets/images/mockups/ra9-mockup.png"]),t.s)
-B.Lm=new A.ed("RA9 Group","E-commerce","The first Karaoke&Cinema Hotel chain in Azerbaijan.",B.Fa,"assets/images/logos/ra9.webp","https://apps.apple.com/pl/app/ra9-group/id1571044002","https://play.google.com/store/apps/details?id=com.frazex.onlinestore.cinemaplaza")
-B.Gu=A.a(s(["assets/images/mockups/unityfood-mockup.png"]),t.s)
-B.Lz=new A.ed("Unity Food","E-commerce","Unity Food specializes in the wholesale of seafood, groceries, meat and meat products, as well as related products.",B.Gu,"assets/images/logos/unityfood.webp","https://apps.apple.com/pl/app/unity-food/id1539019198","")
-B.Gz=A.a(s(["assets/images/mockups/gunka-mockup.png"]),t.s)
-B.Lq=new A.ed("Gunka Beauty House","Customer Loyalty",'\u201cGunka Beauty House" beauty salon - "Looking beautiful is not expensive"',B.Gz,"assets/images/logos/gunka.png","https://apps.apple.com/pl/app/gunka-beauty-house/id1518607512","")
-B.GR=A.a(s(["assets/images/mockups/inloya-pos-mockup.png"]),t.s)
-B.Lw=new A.ed("InLoya POS","Customer Loyalty","InLoya POS is a free mobile application for scanning InLoya QR-codes and identify the clients and promotions, add points, provide with discount and etc.",B.GR,"assets/images/logos/inloya-pos.webp","https://apps.apple.com/pl/app/inloya-pos/id1381461262","https://play.google.com/store/apps/details?id=com.hexobit.inloya_pos_flutter")
-B.ns=A.a(s([B.Ll,B.Ly,B.Lx,B.Ln,B.Lu,B.Lp,B.Ls,B.Lr,B.Lt,B.Lv,B.Lo,B.Lm,B.Lz,B.Lq,B.Lw]),A.af("o<ed>"))
 B.a2=new A.el(0,"icon")
 B.al=new A.el(1,"input")
 B.U=new A.el(2,"label")

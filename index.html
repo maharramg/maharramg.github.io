@@ -82,11 +82,9 @@
       window.addEventListener("flutter-first-frame", () => document.getElementById("splash")?.remove());
     </script>
     <script>
-      // Adds the cross-origin isolation headers GitHub Pages can't send, so the wasm renderer can use a
-      // second thread. Only Chromium browsers load the wasm build, so only they register it.
-      window.coi = { shouldRegister: () => navigator.vendor === "Google Inc." };
+      // Removes the service worker an earlier deploy registered.
+      navigator.serviceWorker?.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()));
     </script>
-    <script src="coi-serviceworker.js"></script>
     <script src="flutter_bootstrap.js" async></script>
   </body>
 </html>

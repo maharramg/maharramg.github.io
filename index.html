@@ -1,90 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-    <base href="/" />
-
-    <meta charset="UTF-8" />
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="Maharram Guliyev is a Flutter developer building iOS and Android apps. See his projects, experience and contact details." />
-    <meta name="theme-color" content="#010623" />
-
-    <!-- Link previews -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://maharramguliyev.com/" />
-    <meta property="og:title" content="Maharram Guliyev | Flutter Developer" />
-    <meta property="og:description" content="Maharram Guliyev is a Flutter developer building iOS and Android apps. See his projects, experience and contact details." />
-    <meta property="og:image" content="https://maharramguliyev.com/icons/Icon-512.png" />
-    <meta name="twitter:card" content="summary" />
-
-    <!-- iOS meta tags & icons -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Maharram Guliyev" />
-    <link rel="apple-touch-icon" href="icons/favicon.png" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="icons/favicon.png" />
-
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://maharramguliyev.com/"/>
+    <meta property="og:title" content="Maharram Guliyev | Flutter Developer"/>
+    <meta property="og:description" content="Maharram Guliyev is a Flutter developer building iOS and Android apps. See his projects, experience and contact details."/>
+    <meta property="og:image" content="https://maharramguliyev.com/icons/Icon-512.png"/>
+    <link href="icons/favicon.png" rel="icon" type="image/png"/>
+    <link href="icons/favicon.png" rel="apple-touch-icon"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link crossorigin href="fonts/neue-power/NeuePower-Ultra.ttf" rel="preload" type="font/ttf" as="font"/>
+    <link crossorigin href="fonts/poppins/Poppins-Regular.ttf" rel="preload" type="font/ttf" as="font"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <script>navigator.serviceWorker?.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()));</script>
+    <!--$-->
     <title>Maharram Guliyev | Flutter Developer</title>
-    <link rel="manifest" href="manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Maharram Guliyev is a Flutter developer building iOS and Android apps. See his projects, experience and contact details."/>
+    <meta name="theme-color" content="#010623"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content="Maharram Guliyev"/>
+    <!--/-->
+    <script src="main.client.dart.js" defer></script>
   </head>
-  <body style="margin: 0; background: #010623">
-    <style>
-      #splash {
-        position: fixed;
-        inset: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-      }
-      #splash .logo {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-      }
-      #splash .spinner {
-        width: 24px;
-        height: 24px;
-        border: 2.5px solid rgba(255, 255, 255, 0.25);
-        border-top-color: #fff;
-        border-radius: 50%;
-        animation: splash-spin 0.8s linear infinite;
-      }
-      @keyframes splash-spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
-    <div id="splash">
-      <div class="logo">
-        <img src="assets/assets/images/icons/mg-icon-white.png" alt="" style="height: 84px; border-radius: 16px" />
-        <img src="assets/assets/images/icons/main-icon-light.png" alt="" style="height: 60px" />
+  <body>
+    <header class="header">
+      <a class="header-logo" title="Home" href="/">
+        <span class="logo"><img class="logo-mark" alt width="2000" height="2000" src="/images/icons/mg-icon-white.png"/><img class="logo-word" alt="Maharram Guliyev" width="540" height="204" src="/images/icons/main-icon-light.png"/></span>
+      </a>
+      <nav class="tabs"><a class="active" href="/">Work</a><a href="/about/">About</a><a href="/#contact">Contact</a></nav>
+    </header>
+    <main>
+      <section class="landing">
+        <div>
+          <p class="landing-hi">Hi there!</p>
+          <h1>I'm Maharram, a<br/>mobile <span>developer</span>.</h1>
+          <p class="landing-desc">I'm passionate about crafting experiences that are engaging, accessible, and user-centric.</p>
+        </div>
+        <a class="landing-arrow" title="Scroll to projects" aria-label="Scroll to projects" href="/#projects"><span class="icon icon-chevron-down" aria-hidden="true"></span></a>
+      </section>
+      <section id="projects" class="projects">
+        <div class="section-title"><h2>Portfolio</h2><p>Projects that I contributed to</p></div>
+        <div class="project-list">
+          <article class="project">
+            <div class="project-info">
+              <div class="project-info-inner">
+                <div class="project-title"><img alt width="60" height="60" src="/images/logos/ryvl.webp"/><h3>RYVL Team</h3></div>
+                <span class="pill">Sports</span>
+                <p class="project-desc">
+                  Ryvl is the ultimate way to experience sports with your friends. Make predictions, drop bold takes, and battle it out in chat-based leagues built for real fans. No spreadsheets, no noise—just straight-up sports talk, picks, and playful rivalries.
+                </p>
+                <div class="store-buttons">
+                  <a class="btn" rel="noopener" href="https://apps.apple.com/us/app/ryvl-team/id6748541801" target="_blank"><span class="icon icon-apple" aria-hidden="true"></span>APP STORE</a>
+                  <a class="btn" rel="noopener" href="https://play.google.com/store/apps/details?id=ryvl.team.app.RYVL" target="_blank"><span class="icon icon-google-play" aria-hidden="true"></span>GOOGLE PLAY</a>
+                </div>
+              </div>
+            </div>
+            <img class="project-mockup" alt="RYVL Team app screens" width="1200" height="1208" src="/images/mockups/ryvl-mockup.webp"/>
+          </article>
+          <article class="project reversed">
+            <div class="project-info">
+              <div class="project-info-inner">
+                <div class="project-title"><img alt width="60" height="60" src="/images/logos/tendo.webp"/><h3>Tendo by Tonik</h3></div>
+                <span class="pill">Finance</span>
+                <p class="project-desc">
+                  Tendo by Tonik gives you access to a full-suite of financial services right at your fingertips. Our app allows you to sign up, log in, make purchases, pay bills, set your financial goals, track your expenses, and much more.
+                </p>
+                <div class="store-buttons">
+                  <a class="btn" rel="noopener" href="https://apps.apple.com/ph/app/tendopay/id1530959249" target="_blank"><span class="icon icon-apple" aria-hidden="true"></span>APP STORE</a>
+                  <a class="btn" rel="noopener" href="https://play.google.com/store/apps/details?id=ph.tendopay.app.android&amp;hl=en_US&amp;gl=US" target="_blank"><span class="icon icon-google-play" aria-hidden="true"></span>GOOGLE PLAY</a>
+                </div>
+              </div>
+            </div>
+            <img class="project-mockup" alt="Tendo by Tonik app screens" width="1200" height="1208" src="/images/mockups/tendopay-mockup.webp"/>
+          </article>
+          <article class="project">
+            <div class="project-info">
+              <div class="project-info-inner">
+                <div class="project-title"><img alt width="60" height="60" src="/images/logos/passave.webp"/><h3>Passave</h3></div>
+                <span class="pill">Utilities</span>
+                <p class="project-desc">
+                  Passave is more than just a password manager; it is a sophisticated, privacy-first encryption vault designed for those who demand absolute digital sovereignty. Our philosophy is simple: your sensitive credentials, private documents, and cryptographic keys should never leave your device in an unencrypted state.
+                </p>
+                <div class="store-buttons">
+                  <a class="btn" rel="noopener" href="https://apps.apple.com/us/app/passave-password-manager/id6745766587" target="_blank"><span class="icon icon-apple" aria-hidden="true"></span>APP STORE</a>
+                  <a class="btn" rel="noopener" href="https://play.google.com/store/apps/details?id=com.passave.app" target="_blank"><span class="icon icon-google-play" aria-hidden="true"></span>GOOGLE PLAY</a>
+                </div>
+              </div>
+            </div>
+            <img class="project-mockup" alt="Passave app screens" width="1200" height="1208" loading="lazy" src="/images/mockups/passave-mockup.webp"/>
+          </article>
+          <article class="project reversed">
+            <div class="project-info">
+              <div class="project-info-inner">
+                <div class="project-title"><img alt width="60" height="60" src="/images/logos/esimafly.webp"/><h3>Esimafly</h3></div>
+                <span class="pill">Travel</span>
+                <p class="project-desc">
+                  Esimafly is your trusted partner in seamless global connectivity. Founded with the vision of revolutionizing the way travelers stay connected, Esimafly offers affordable and convenient eSIM data packages for globetrotters, digital nomads, and business travelers alike.
+                </p>
+                <div class="store-buttons">
+                  <a class="btn" rel="noopener" href="https://apps.apple.com/az/app/esimafly-esim-internet/id6618155522" target="_blank"><span class="icon icon-apple" aria-hidden="true"></span>APP STORE</a>
+                  <span class="btn disabled" aria-disabled="true"><span class="icon icon-google-play" aria-hidden="true"></span>GOOGLE PLAY</span>
+                </div>
+              </div>
+            </div>
+            <img class="project-mockup" alt="Esimafly app screens" width="1200" height="1208" loading="lazy" src="/images/mockups/esimafly-mockup.webp"/>
+          </article>
+          <article class="project">
+            <div class="project-info">
+              <div class="project-info-inner">
+                <div class="project-title"><img alt width="60" height="60" src="/images/logos/tentony.webp"/><h3>Tentony</h3></div>
+                <span class="pill">E-commerce</span>
+                <p class="project-desc">
+                  The easy way to shop from home. Enhance your shopping experience with the Tentony app. By downloading the Tentony app, you can find the answer to all your needs in one app. Brands' new season products, daily specials and discounts you won't find anywhere else are with you anytime with the Tentony mobile app!
+                </p>
+                <div class="store-buttons">
+                  <a class="btn" rel="noopener" href="https://apps.apple.com/do/app/tentony/id1630425777" target="_blank"><span class="icon icon-apple" aria-hidden="true"></span>APP STORE</a>
+                  <span class="btn disabled" aria-disabled="true"><span class="icon icon-google-play" aria-hidden="true"></span>GOOGLE PLAY</span>
+                </div>
+              </div>
+            </div>
+            <img class="project-mockup" alt="Tentony app screens" width="1200" height="1208" loading="lazy" src="/images/mockups/tentony-mockup.webp"/>
+          </article>
+        </div>
+        <div class="see-more"><a href="/projects/">See more<span class="icon icon-chevron-right" aria-hidden="true"></span></a></div>
+      </section>
+    </main>
+    <footer id="contact" class="footer">
+      <!--@contact_view-->
+      <section class="contact">
+        <div class="contact-intro">
+          <h2>Let’s<br/>talk<span>*</span></h2>
+          <h3>Get in touch</h3>
+          <p>
+            To request a quote or want to meet up, contact me directly or fill out the form and I will get back to you in no time.
+          </p>
+        </div>
+        <div class="contact-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="contact-name">Full Name</label>
+              <input id="contact-name" placeholder="e.g. John Doe" autocomplete="name" type="text"/>
+            </div>
+            <div class="field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" placeholder="e.g. bigdjohn@gmail.com" autocomplete="email" type="email"/>
+            </div>
+          </div>
+          <div class="field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Type something ..."></textarea>
+          </div>
+          <button class="btn btn-send" type="button">Send Message</button>
+        </div>
+      </section>
+      <!--/@contact_view-->
+      <div class="footer-bottom">
+        <div class="footer-top">
+          <span class="logo"><img class="logo-mark" alt width="2000" height="2000" src="/images/icons/mg-icon-white.png"/><img class="logo-word" alt="Maharram Guliyev" width="540" height="204" src="/images/icons/main-icon-light.png"/></span>
+          <nav class="tabs"><a class="active" href="/">Work</a><a href="/about/">About</a><a href="/#contact">Contact</a></nav>
+        </div>
+        <hr/>
+        <div class="socials">
+          <a rel="noopener" title="GitHub" aria-label="GitHub" href="https://github.com/maharramg" target="_blank"><span class="icon icon-github" aria-hidden="true"></span></a>
+          <a rel="noopener" title="LinkedIn" aria-label="LinkedIn" href="https://www.linkedin.com/in/maharramg/" target="_blank"><span class="icon icon-linkedin" aria-hidden="true"></span></a>
+          <a rel="noopener" title="Instagram" aria-label="Instagram" href="https://www.instagram.com/matyshere/" target="_blank"><span class="icon icon-instagram" aria-hidden="true"></span></a>
+          <a rel="noopener" title="Facebook" aria-label="Facebook" href="https://www.facebook.com/matyshere" target="_blank"><span class="icon icon-facebook" aria-hidden="true"></span></a>
+          <a rel="noopener" title="Email" aria-label="Email" href="mailto:maharramguliev@gmail.com?subject=Portfolio" target="_blank"><span class="icon icon-envelope" aria-hidden="true"></span></a>
+        </div>
+        <p>© Copyright - Maharram Guliyev</p>
       </div>
-      <div class="spinner" role="progressbar" aria-label="Loading"></div>
-    </div>
-    <script>
-      window.addEventListener("flutter-first-frame", () => document.getElementById("splash")?.remove());
-    </script>
-    <script>
-      // Removes the service worker an earlier deploy registered.
-      navigator.serviceWorker?.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()));
-    </script>
-    <script src="flutter_bootstrap.js" async></script>
+    </footer>
   </body>
 </html>

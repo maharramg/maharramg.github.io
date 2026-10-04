@@ -1025,7 +1025,7 @@ p.a2C()
 return p},
 aIn(a){return new A.a1J($.ai,a)},
 at0(){var s,r,q,p,o=v.G,n=o.window,m=A.aHX(n.navigator)
-if(m==null||m.length===0)return B.nW
+if(m==null||m.length===0)return B.nV
 s=A.b([],t.ss)
 for(n=m.length,r=0;r<m.length;m.length===n||(0,A.u)(m),++r){q=m[r]
 p=new o.Intl.Locale(q)
@@ -1578,10 +1578,10 @@ return s},
 auO(a){var s=!1
 if($.b6().gcG()===B.aA||$.b6().gcG()===B.bx)if(a!=null)s=a===".SF Pro Text"||a===".SF Pro Display"||a===".SF UI Text"||a===".SF UI Display"
 return s},
-aBy(){if(A.aCS())return B.nV
+aBy(){if(A.aCS())return B.nU
 if($.b6().gcG()===B.aA||$.b6().gcG()===B.bx)return B.Hf
 throw A.i(A.aI("Should only be called on Mac or iOS."))},
-aPp(){if(A.aCS())return B.nV
+aPp(){if(A.aCS())return B.nU
 if($.b6().gcG()===B.aA||$.b6().gcG()===B.bx)return A.aBy()
 return B.Hc},
 aCq(a,b){var s,r,q,p,o=new A.c7("")
@@ -11174,8 +11174,8 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.bi(s,200)
-r=A.bi(A.a0p(l,B.nX,B.Hh),24)
-q=A.bi(A.a0p(l,B.nX,B.I0),32)
+r=A.bi(A.a0p(l,B.nW,B.Hh),24)
+q=A.bi(A.a0p(l,B.nW,B.I0),32)
 p=A.bi(l.a,10)
 o=A.bi(l.a,12)
 l.d===$&&A.a()
@@ -11185,8 +11185,8 @@ break
 case 5:s=l.a
 s===$&&A.a()
 s=A.bi(A.yU(s+240),40)
-r=A.bi(A.a0p(l,B.nZ,B.IG),24)
-q=A.bi(A.a0p(l,B.nZ,B.IH),32)
+r=A.bi(A.a0p(l,B.nY,B.IG),24)
+q=A.bi(A.a0p(l,B.nY,B.IH),32)
 p=A.bi(l.a+15,8)
 o=A.bi(l.a+15,12)
 l.d===$&&A.a()
@@ -11538,7 +11538,7 @@ axj(a,b,c){if(b!=null&&!b.j(0,B.X))return A.awP(b.b4(A.aIi(c)),a)
 return a},
 aIi(a){var s,r,q,p,o,n
 if(a<0)return 0
-for(s=0;r=B.nY[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.nY[s-1]
+for(s=0;r=B.nX[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.nX[s-1]
 o=p.a
 n=p.b
 return n+(a-o)/(q-o)*(r.b-n)},
@@ -25578,7 +25578,7 @@ f=A.aRA(A.av3(A.e6(f,0,g).ge3()))
 $.XA=!0
 $.Xl=new A.a95(f,B.m5)
 f=A.r(t.LH,t.nd)
-for(s=0;s<6;++s)f.m(0,B.o0[s],B.B1)
+for(s=0;s<6;++s)f.m(0,B.o_[s],B.B1)
 f=A.ue(g,g,B.M,"Poppins",new A.zs(f),B.iZ,g)
 f=A.qM(new A.yP(A.ar(["/",new A.arQ(),"/about",new A.arR(),"/projects",new A.arS()],t.N,t.Ab),"/",new A.arT(),"Maharram Guliyev",f,!1,g),g)
 r=A.cM(4e5,0)
@@ -37410,11 +37410,11 @@ gWw(){var s=this.a
 if(s instanceof A.eD)return s
 return this.a=new A.eD(s)},
 gapr(){var s,r,q,p,o,n=this
-if(n.c===1)return B.o2
+if(n.c===1)return B.o1
 s=n.d
 r=J.bs(s)
 q=r.gE(s)-J.de(n.e)-n.f
-if(q===0)return B.o2
+if(q===0)return B.o1
 p=[]
 for(o=0;o<q;++o)p.push(r.h(s,o))
 p.$flags=3
@@ -42625,7 +42625,8 @@ n=A.S(q,r,m)
 n.toString
 return n}},
 f4(a){return(this.c-this.b)/this.r},
-kZ(a){return!1}}
+kZ(a){var s=this,r=s.x,q=a>=(r===$?s.x=s.e*s.r-s.w:r)
+return q}}
 A.ON.prototype={}
 A.OO.prototype={}
 A.OP.prototype={}
@@ -46556,7 +46557,7 @@ q=m.y
 m=m.cx
 p=o.gabk()
 o.a.toString
-return new A.C9(n,n,n,new A.ali(),n,n,n,n,n,n,l,q,n,r,B.Ik,o.gabr(),m,n,B.Tg,s,n,p,n,n,B.nW,!1,!1,n,n,n,new A.oo(o,t.bT))},
+return new A.C9(n,n,n,new A.ali(),n,n,n,n,n,n,l,q,n,r,B.Ik,o.gabr(),m,n,B.Tg,s,n,p,n,n,B.nV,!1,!1,n,n,n,new A.oo(o,t.bT))},
 K(a){var s,r=this.a3V(a)
 this.a.toString
 s=this.d
@@ -50755,7 +50756,7 @@ $3(a,b,c){return new A.ng(b,this.a,!1,c,null)},
 $S:119}
 A.zs.prototype={
 BV(a){var s=t.Tr
-s=A.a0(new A.a4(B.o0,new A.a8Z(a),s),s.i("al.E"))
+s=A.a0(new A.a4(B.o_,new A.a8Z(a),s),s.i("al.E"))
 return s},
 j(a,b){var s,r=this
 if(b==null)return!1
@@ -56882,8 +56883,8 @@ s=r.N
 r.dT=s==null?null:s.gJZ()
 a.a=!1},
 nn(a,b,c){var s,r,q,p,o=this
-o.hx=A.azh(o.hx,B.o1)
-o.fU=A.azh(o.fU,B.o1)
+o.hx=A.azh(o.hx,B.o0)
+o.fU=A.azh(o.fU,B.o0)
 s=o.hx
 r=s!=null&&!s.ga0(s)
 s=o.fU
@@ -84884,11 +84885,11 @@ if(A.a2(a,B.m,l).w.a.a>=1200)r=B.PN
 else r=A.cL(a)?B.dF:B.PP
 q=t.p
 r=A.b([B.dF,s,r],q)
-for(p=0;p<5;++p){o=B.nU[p]
+for(p=0;p<5;++p){o=B.o2[p]
 if(A.a2(a,B.m,l).w.a.a>=1200)s=130
 else s=A.a2(a,B.m,l).w.a.a>=800&&A.a2(a,B.m,l).w.a.a<=1200?100:35
 n=A.b([],q)
-if(o!==B.b.ga_(B.nU))n.push(B.DH)
+if(o!==B.b.ga_(B.o2))n.push(B.DH)
 n.push(new A.co(m,A.a2(a,B.m,l).w.a.a<800?35:60,m,m))
 n.push(new A.K6(o,m))
 n.push(new A.co(m,A.a2(a,B.m,l).w.a.a<800?35:60,m,m))
@@ -85145,7 +85146,7 @@ s=a.x
 s===$&&A.a()
 r=o.a/1e6
 s=p===q?0:(A.v(s,q,p)-q)/(p-q)*r
-return a.x0(new A.anS(q,p,!0,null,a.ga5s(),r,s,B.bq))},
+return a.x0(new A.anS(q,p,!0,12,a.ga5s(),r,s,B.bq))},
 $S:527}
 A.tp.prototype={
 ah(){return new A.T3()}}
@@ -89812,16 +89813,10 @@ B.HL=s([4.85481134,2.47563463],t.n)
 B.Hi=s([5.62945551,2.72948597],t.n)
 B.Ht=s([6.43023796,2.98020421],t.n)
 B.nT=s([B.Hs,B.Gn,B.Iq,B.Is,B.He,B.Hl,B.HU,B.Hv,B.HL,B.Hi,B.Ht],t.zg)
-B.FV=new A.m6("RYVL Team","NY, United States of America","05/2026 - Present","\u2022\tPlayed a key role in building \u201cRYVL\u201d \u2013 an interactive soccer fantasy chat game where users can challenge friends, make match predictions, compete on leaderboards, earn coins, and unlock rewards.\n\u2022\tWorked on developing engaging mobile features such as friend leagues, weekly and custom predictions, in-app chat, ranking systems, and reward-based user interactions to create a more competitive and social experience.\n\u2022\tContributed to API integrations, performance improvements, and overall app stability, helping deliver a smooth and enjoyable fantasy sports platform for football fans across mobile devices.")
-B.FU=new A.m6("Tendo by Tonik","Makati, Philippines","03/2023 - Present","\u2022\tDeveloped and contributed significantly to the success of \u201cTendo by Tonik\u201d \u2013 an innovative installment-based payment solution for online shopping in the Philippines, designed to provide customers with a more flexible, convenient, and accessible way to manage payments for their online purchases.\n\u2022\tSpearheaded end-to-end mobile app development, working closely with cross-functional teams including backend developers, product managers, QA engineers, and UI/UX designers to deliver a smooth and reliable user experience.\n\u2022\tSuccessfully integrated third-party APIs and payment-related services to enhance the app\u2019s functionality, improve transaction flow, and support the platform\u2019s growth by making installment payments easier and more user-friendly for customers.")
-B.FT=new A.m6("Tentony","Baku, Azerbaijan","07/2022 - 02/2023",'\u2022 Developed and contributed significantly to the success of "Tentony" - an expansive e-commerce application that has established itself as a prominent online shopping and selling platform in Azerbaijan.\n\u2022 Collaborated closely with UX/UI designers to implement visually appealing designs, playing a key role in positioning the app as a top-rated shopping app on both iOS and Android platforms.\n\u2022 Resulted in heightened user engagement and widespread recognition, solidifying "Tentony" as a market leader in the region\'s e-commerce industry')
-B.FW=new A.m6("Baku Creative Projects","Baku, Azerbaijan","03/2021 - 06/2022",'\u2022 Spearheaded the development of "Wibty" - a pioneering social media platform acknowledged as Azerbaijan\'s first successful venture in this domain.\n\u2022 Engineered an innovative application that allows users to effortlessly post, listen to music, and connect with new contacts concurrently, creating a distinctive social environment.\n\u2022 Employed the BLoC package for streamlined state management, resulting in a 25% reduction in app loading times and a marked enhancement in overall user satisfaction.')
-B.FX=new A.m6("Frazex LLC","Baku, Azerbaijan","10/2020 - 12/2022","\u2022 Engaged in the development of diverse mobile applications, notably contributing to e-commerce platforms like \u201cRahat Kart\u201d, \u201cBouquet\u201d and \u201cLilac.az\u201d.\n\u2022 Additionally, played a pivotal role in creating food delivery applications, explicitly working on client-side interfaces and partner/courier interfaces such as \u201cTezibu Partner\u201d and \u201cTezibu Courier\u201d.\n\u2022 Actively collaborated with clients throughout the requirements-gathering phase, ensuring a comprehensive understanding of objectives, ultimately reducing development iterations substantially.")
-B.nU=s([B.FV,B.FU,B.FT,B.FW,B.FX],A.an("y<m6>"))
 B.Hc=s(["Arial"],t.s)
 B.Hd=s([B.iH,B.iI],A.an("y<wc>"))
 B.Hf=s(["-apple-system","BlinkMacSystemFont"],t.s)
-B.nV=s(["BlinkMacSystemFont"],t.s)
+B.nU=s(["BlinkMacSystemFont"],t.s)
 B.Hh=s([18,15,10,12,15,18,15,12,12],t.n)
 B.Hm=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
 B.R7=new A.d8("I'm Maharram, a\nmobile ",null,null,B.aa,null,null,null,null,null,null,null)
@@ -89842,16 +89837,16 @@ B.bz=new A.em(9,"counter")
 B.cv=new A.em(10,"container")
 B.Hu=s([B.aC,B.aR,B.ad,B.aZ,B.b_,B.b0,B.a7,B.aK,B.by,B.bz,B.cv],A.an("y<em>"))
 B.IU=new A.oK("en",null,"US")
-B.nW=s([B.IU],t.ss)
-B.nX=s([0,41,61,101,131,181,251,301,360],t.n)
+B.nV=s([B.IU],t.ss)
+B.nW=s([0,41,61,101,131,181,251,301,360],t.n)
 B.Xc=new A.lc(0,0)
 B.Xh=new A.lc(1,0.05)
 B.Xf=new A.lc(3,0.08)
 B.Xg=new A.lc(6,0.11)
 B.Xe=new A.lc(8,0.12)
 B.Xd=new A.lc(12,0.14)
-B.nY=s([B.Xc,B.Xh,B.Xf,B.Xg,B.Xe,B.Xd],A.an("y<lc>"))
-B.nZ=s([0,21,51,121,151,191,271,321,360],t.n)
+B.nX=s([B.Xc,B.Xh,B.Xf,B.Xg,B.Xe,B.Xd],A.an("y<lc>"))
+B.nY=s([0,21,51,121,151,191,271,321,360],t.n)
 B.HC=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
 B.Al=new A.Hs(2,"outer")
 B.mA=new A.D(0.09803921568627451,0,0,0,B.h)
@@ -89876,7 +89871,7 @@ B.I=new A.eE(2,"iOS")
 B.bf=new A.eE(3,"linux")
 B.aI=new A.eE(4,"macOS")
 B.bg=new A.eE(5,"windows")
-B.o0=s([B.ak,B.bp,B.I,B.bf,B.aI,B.bg],A.an("y<eE>"))
+B.o_=s([B.ak,B.bp,B.I,B.bf,B.aI,B.bg],A.an("y<eE>"))
 B.zF=new A.uG(0,"topLeft")
 B.zI=new A.uG(3,"bottomRight")
 B.X7=new A.lb(B.zF,B.zI)
@@ -89894,7 +89889,7 @@ B.hL=new A.eg(B.aT,B.hK)
 B.I5=s([B.AP,B.hL],A.an("y<aV>"))
 B.I9=s(["email"],t.s)
 B.In=s([],t.QP)
-B.o1=s([],A.an("y<aS2>"))
+B.o0=s([],A.an("y<aS2>"))
 B.If=s([],t.D)
 B.Ic=s([],t.fJ)
 B.Ih=s([],t.ER)
@@ -89911,8 +89906,14 @@ B.Id=s([],t.AS)
 B.YL=s([],t.p)
 B.Ii=s([],t.n)
 B.Ia=s([],t.t)
-B.o2=s([],t.ee)
+B.o1=s([],t.ee)
 B.Ie=s([],t._m)
+B.FX=new A.m6("RYVL Team","New York, USA","05/2026 - Present","\u2022\tPlayed a key role in building \u201cRYVL\u201d \u2013 an interactive soccer fantasy chat game where users can challenge friends, make match predictions, compete on leaderboards, earn coins, and unlock rewards.\n\u2022\tWorked on developing engaging mobile features such as friend leagues, weekly and custom predictions, in-app chat, ranking systems, and reward-based user interactions to create a more competitive and social experience.\n\u2022\tContributed to API integrations, performance improvements, and overall app stability, helping deliver a smooth and enjoyable fantasy sports platform for football fans across mobile devices.")
+B.FU=new A.m6("Tendo by Tonik","Makati, Philippines","03/2023 - Present","\u2022\tDeveloped and contributed significantly to the success of \u201cTendo by Tonik\u201d \u2013 an innovative installment-based payment solution for online shopping in the Philippines, designed to provide customers with a more flexible, convenient, and accessible way to manage payments for their online purchases.\n\u2022\tSpearheaded end-to-end mobile app development, working closely with cross-functional teams including backend developers, product managers, QA engineers, and UI/UX designers to deliver a smooth and reliable user experience.\n\u2022\tSuccessfully integrated third-party APIs and payment-related services to enhance the app\u2019s functionality, improve transaction flow, and support the platform\u2019s growth by making installment payments easier and more user-friendly for customers.")
+B.FT=new A.m6("Tentony","Baku, Azerbaijan","07/2022 - 02/2023",'\u2022 Developed and contributed significantly to the success of "Tentony" - an expansive e-commerce application that has established itself as a prominent online shopping and selling platform in Azerbaijan.\n\u2022 Collaborated closely with UX/UI designers to implement visually appealing designs, playing a key role in positioning the app as a top-rated shopping app on both iOS and Android platforms.\n\u2022 Resulted in heightened user engagement and widespread recognition, solidifying "Tentony" as a market leader in the region\'s e-commerce industry')
+B.FV=new A.m6("Baku Creative Projects","Baku, Azerbaijan","03/2021 - 06/2022",'\u2022 Spearheaded the development of "Wibty" - a pioneering social media platform acknowledged as Azerbaijan\'s first successful venture in this domain.\n\u2022 Engineered an innovative application that allows users to effortlessly post, listen to music, and connect with new contacts concurrently, creating a distinctive social environment.\n\u2022 Employed the BLoC package for streamlined state management, resulting in a 25% reduction in app loading times and a marked enhancement in overall user satisfaction.')
+B.FW=new A.m6("Frazex LLC","Baku, Azerbaijan","10/2020 - 12/2022","\u2022 Engaged in the development of diverse mobile applications, notably contributing to e-commerce platforms like \u201cRahat Kart\u201d, \u201cBouquet\u201d and \u201cLilac.az\u201d.\n\u2022 Additionally, played a pivotal role in creating food delivery applications, explicitly working on client-side interfaces and partner/courier interfaces such as \u201cTezibu Partner\u201d and \u201cTezibu Courier\u201d.\n\u2022 Actively collaborated with clients throughout the requirements-gathering phase, ensuring a comprehensive understanding of objectives, ultimately reducing development iterations substantially.")
+B.o2=s([B.FX,B.FU,B.FT,B.FV,B.FW],A.an("y<m6>"))
 B.Lg=new A.h(0,2)
 B.AH=new A.dE(0.75,B.dZ,B.mA,B.Lg,1.5)
 B.It=s([B.AH],t.sq)
@@ -90557,9 +90558,9 @@ B.k5=s(["Noto Sans TC"],t.s)
 B.HV=s(["Noto Sans HK","Noto Sans TC"],t.s)
 B.GW=s(["Noto Sans JP"],t.s)
 B.Gm=s(["Noto Sans KR"],t.s)
-B.o_=s(["Noto Sans SC"],t.s)
+B.nZ=s(["Noto Sans SC"],t.s)
 B.IO=s(["Noto Sans SC","Noto Sans TC"],t.s)
-B.hp=new A.bE(B.L6,[B.k5,B.k5,B.k5,B.HV,B.GW,B.Gm,B.o_,B.o_,B.IO],t.VJ)
+B.hp=new A.bE(B.L6,[B.k5,B.k5,B.k5,B.HV,B.GW,B.Gm,B.nZ,B.nZ,B.IO],t.VJ)
 B.L2={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
 B.x2=new A.l(458907)
 B.wJ=new A.l(458873)

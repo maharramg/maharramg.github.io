@@ -14,6 +14,28 @@
     <link crossorigin href="fonts/neue-power/NeuePower-Ultra.ttf" rel="preload" type="font/ttf" as="font"/>
     <link crossorigin href="fonts/poppins/Poppins-Regular.ttf" rel="preload" type="font/ttf" as="font"/>
     <link href="styles.css" rel="stylesheet"/>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        let saved;
+        try { saved = localStorage.theme; } catch (_) {}
+        root.dataset.theme = saved ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        addEventListener('click', (e) => {
+          if (!e.target.closest?.('.theme-toggle')) return;
+          root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+          try { localStorage.theme = root.dataset.theme; } catch (_) {}
+        });
+        // Lets the stylesheet reveal the toggle once at least half of the landing is scrolled away.
+        addEventListener('DOMContentLoaded', () => {
+          const landing = document.querySelector('.landing');
+          if (!landing) return;
+          const update = () => root.toggleAttribute('data-past-landing', scrollY > landing.offsetHeight / 2);
+          addEventListener('scroll', update, { passive: true });
+          update();
+        });
+      })();
+      
+    </script>
     <script>navigator.serviceWorker?.getRegistrations().then((rs) => rs.forEach((r) => r.unregister()));</script>
     <!--$-->
     <title>Maharram Guliyev | Flutter Developer</title>
@@ -32,7 +54,13 @@
       <a class="header-logo" title="Home" href="/">
         <span class="logo"><img class="logo-mark" alt width="2000" height="2000" src="/images/icons/mg-icon-white.png"/><img class="logo-word" alt="Maharram Guliyev" width="540" height="204" src="/images/icons/main-icon-light.png"/></span>
       </a>
-      <nav class="tabs"><a class="active" href="/">Work</a><a href="/about/">About</a><a href="/#contact">Contact</a></nav>
+      <div class="header-actions">
+        <nav class="tabs"><a class="active" href="/">Work</a><a href="/about/">About</a><a href="/#contact">Contact</a></nav>
+        <button class="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" type="button">
+          <span class="icon icon-moon only-light" aria-hidden="true"></span>
+          <span class="icon icon-sun only-dark" aria-hidden="true"></span>
+        </button>
+      </div>
     </header>
     <main>
       <section class="landing">
